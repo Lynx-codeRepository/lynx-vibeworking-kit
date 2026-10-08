@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "task": "{{name}}",
+  "status": "in-progress",
+  "environment": "local",
+  "outputs": [],
+  "checks": [],
+  "limitations": []
+}

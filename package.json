@@ -1,0 +1,18 @@
+{
+  "name": "@lynx/vibecoding-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "灵熙公司任务 Kit：帮助业务、运营与研发新人通过 AI 完成专业任务。",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "bin": { "lynx-kit": "bin/lynx-kit.mjs" },
+  "scripts": {
+    "kit": "node bin/lynx-kit.mjs",
+    "validate": "node bin/lynx-kit.mjs validate",
+    "test": "node --test",
+    "check": "npm run validate && npm test"
+  },
+  "license": "UNLICENSED",
+  "repository": { "type": "git", "url": "https://github.com/Lynx-codeRepository/lynx-vibecoding-kit.git" },
+  "files": ["bin", "lib", "catalog.json", "skills", "templates", "docs", "README.md", "START-HERE.md", "LICENSE"]
+}

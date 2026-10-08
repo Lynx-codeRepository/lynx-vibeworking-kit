@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "organization": "Lynx-codeRepository",
+  "version": "0.1.0",
+  "profiles": [
+    { "id": "website", "title": "官网与业务页面", "audience": ["市场", "业务", "研发"], "examples": ["做产品官网", "修复表单", "改善移动端体验"], "recipe": "skills/lynx-delivery/references/packs/website.md", "repositories": [], "tools": ["git", "node"], "outputs": ["可打开的预览", "关键路径验证", "交接说明"] },
+    { "id": "dam", "title": "品牌资产与审核流程", "audience": ["业务", "运营", "研发"], "examples": ["修复提审卡住", "优化长图审核", "配置客户品牌"], "recipe": "skills/lynx-delivery/references/packs/dam.md", "repositories": ["content-os-pilot"], "tools": ["git", "node", "python3", "uv", "docker", "ffmpeg"], "outputs": ["业务闭环", "角色与隔离验证", "修复和限制说明"] },
+    { "id": "video-review", "title": "视频审核与媒体流程", "audience": ["运营", "制作", "研发"], "examples": ["实现逐帧批注", "接入多版本对比", "排查视频上传失败"], "recipe": "skills/lynx-delivery/references/packs/video-review.md", "repositories": ["video-review"], "tools": ["git", "node", "pnpm", "python3", "uv", "docker", "ffmpeg", "ffprobe"], "outputs": ["审阅流程", "帧与版本证据", "宿主接入边界"] },
+    { "id": "geo-content", "title": "GEO 诊断与品牌内容", "audience": ["GEO", "市场", "运营", "研发"], "examples": ["做品牌 AI 能见度报告", "写有事实来源的品牌文章", "分析内容改版前后表现"], "recipe": "skills/lynx-delivery/references/packs/geo-content.md", "repositories": ["AI-Intelligent-Marketing", "GEO_UP", "GEO-"], "tools": ["git", "python3"], "outputs": ["来源账本", "内容或诊断报告", "采样与发布边界"] },
+    { "id": "content-media", "title": "内容工厂与媒介发布", "audience": ["运营", "媒介", "研发"], "examples": ["修复内容归档", "核对积分流水", "开发媒体订单能力"], "recipe": "skills/lynx-delivery/references/packs/content-media.md", "repositories": ["content-media"], "tools": ["git", "node", "java", "mvn"], "outputs": ["业务与权限闭环", "事务和文件证据", "发布或迁移方案"] },
+    { "id": "miniapp", "title": "小程序与移动业务", "audience": ["业务", "运营", "研发"], "examples": ["增加小程序业务页面", "优化表单", "准备提审材料"], "recipe": "skills/lynx-delivery/references/packs/miniapp.md", "repositories": ["huanFangHaoWu-uniapp", "customs-uniapp", "lzlz-uniapp"], "tools": ["git", "node"], "outputs": ["可预览页面", "平台与设备验证", "提审交接材料"] },
+    { "id": "workbench", "title": "内部工作台与自动化", "audience": ["管理", "运营", "研发"], "examples": ["做项目进度看板", "自动汇总研发进展", "对接企业工具"], "recipe": "skills/lynx-delivery/references/packs/workbench.md", "repositories": ["lingxi-rd-workbench", "Automatic-screenshot"], "tools": ["git", "node"], "outputs": ["工作台或自动化成果", "权限与幂等验证", "运行和撤销说明"] },
+    { "id": "business-delivery", "title": "调研、文档、数据与演示", "audience": ["业务", "市场", "运营", "管理", "研发"], "examples": ["制作客户方案", "分析运营表格", "做培训课件或产品视频"], "recipe": "skills/lynx-delivery/references/packs/business-delivery.md", "repositories": ["zhou-dasheng-video"], "tools": [], "outputs": ["可转发的正式文件", "事实或数据证据", "检查与使用说明"] }
+  ]
+}
