@@ -1,21 +1,21 @@
 ---
 name: "lynx-professional-output"
 display_name: "灵熙专业文档"
-display_name_en: "Lingxi professional documents"
-description: "撰写客户方案、调研报告、周报月报、会议纪要或管理汇报时使用。从事实和决策出发，输出可编辑文档、行动项、来源与待确认信息。"
-description_zh: "撰写客户方案、调研报告、周报月报、会议纪要或管理汇报时使用。从事实和决策出发，输出可编辑文档、行动项、来源与待确认信息。"
-description_en: "Write editable proposals, research reports, meeting notes and management updates with clear evidence and action items."
-version: "0.2.0"
+display_name_en: "Lingxi reports and meeting notes"
+description: "依据客户会议、拜访记录或工作材料制作纪要、跟进草稿、周报月报、调研报告及管理汇报时使用。区分决定与建议，明确行动、责任和待确认项。"
+description_zh: "依据客户会议、拜访记录或工作材料制作纪要、跟进草稿、周报月报、调研报告及管理汇报时使用。区分决定与建议，明确行动、责任和待确认项。"
+description_en: "Lingxi reports and meeting notes using existing WorkBuddy tools and supplied files."
+version: "0.3.0"
 author: "灵熙智能 / Lynx-codeRepository"
 ---
 
-# 输出能直接用于工作的材料
+# 把材料整理成能行动的文档
 
-读取 [文档与汇报方法](references/formats.md)。先核对对象、用途、事实材料、期限和文件格式；当前用户指令优先。
+根据任务读 [文档结构](references/formats.md)；客户会议读 [会议后交付流程](references/upstream-methods.md)。来源见 [改编记录](THIRD_PARTY_NOTICES.md)。
 
-1. 理清事实、会议共识、提议、推断、开放问题。没确认的数量/价格/排期/责任人留待确认，不写成决定。
-2. 选择文档结构并先给清楚结论。客户方案用业务问题→目标→流程→交付→验证/资源；管理汇报用成果→问题/改进→计划/决策；会议纪要用共识→讨论→行动项→开放问题。
-3. 默认中文可编辑 Markdown；用户需要 Word/表格时用当前 Office 工具生成实际文件。PPT 转用灵熙方案与 PPT 技能，先文案再文件（已有完整制作授权可直接完成）。
-4. 按 [工作文档模板](templates/work-document.md) 输出，保留来源、计算依据和版本日期。文字简洁，技术名词只在读者需要决策时解释。
-5. 打开正式文件核对标题层级、表格、数字、姓名、日期、责任与附件链接。只有文本草稿时不声称 Word/PPT 已生成。
-6. 交付可编辑文件、行动清单和未确认事项。实际发送/发布按当前授权与公司流程执行，不从旧记录推定新的操作授权。
+1. 先读用户提供的原始记录，核对对象、用途、期间与格式。发言人不清时保留不确定性，不凭语气给人分配承诺。
+2. 提取业务问题、已确认共识、提出的方案、疑虑/反对意见、下一步与开放问题。未确认的价格、数量、排期和责任人不能写成决定。
+3. 按用途组织：客户纪要突出共识与下一步；内部纪要补充风险与待决定问题；周报/月报讲成果、证据、问题、改进和下一阶段。来源与实际进展对应。
+4. 使用 [文档模板](templates/work-document.md)，行动项列事项、责任人、日期、状态；缺项写待确认。客户跟进文字与内部分析分开。
+5. 用户需要 Word 时用 WorkBuddy 已有文档工具生成 .docx；未指定格式默认可编辑 Markdown。只交草稿时明确是草稿。PPT 任务交给方案技能。
+6. 核对数字、日期、姓名、材料引用和附件。交付实际文件与必要的待确认项。发送给客户或同事按当前用户授权执行。

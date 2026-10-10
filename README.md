@@ -1,53 +1,60 @@
 # 灵熙智能 WorkBuddy 工作 Kit
 
-给业务、运营和研发新人共用的办公任务包。用一句话说明目标，交给 WorkBuddy 完成**客户方案与 PPT、客户/行业调研、公开数据调研、内部表格分析和汇报材料**。
+给业务、运营和研发新人使用的办公技能：**客户调研、竞品分析、方案PPT、数据分析、内容策划和汇报材料**。选工作、上传技能、交资料，用一句话开始。
 
-**员工从 [开始使用](START-HERE.md) 进入。无需学习 Git、命令行或代码开发。**
+**[第一次使用](START-HERE.md) · [下载 v0.3.0 技能包](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/tag/v0.3.0) · [直接复制的工作指令](docs/examples.md)**
 
-## AI 培训学习
+## 选今天要做的工作
 
-[第一期与第二期正式课件](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/tree/main/training)：第一期 6 讲、第二期 5 份，共 11 份 PDF，按期别和学习顺序在线阅读或下载。培训 PDF 单独获取，不作为技能上传。
+| 今天要完成的工作 | 上传哪个技能 | 交付什么 |
+|---|---|---|
+| 客户/行业/公开数据调研 | [灵熙客户与数据调研](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-research-v0.3.0.zip) | 客户简报、来源表、沟通问题 |
+| 竞品比较、售前对比 | [灵熙竞品与行业简报](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-competitive-brief-v0.3.0.zip) | 对比矩阵、竞争简报、机会与待验证项 |
+| 客户方案与PPT | [灵熙方案与 PPT](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-proposal-ppt-v0.3.0.zip) | 逐页文案、可编辑PPT、材料与检查 |
+| Excel/CSV运营分析 | [灵熙数据洞察](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-data-insight-v0.3.0.zip) | 质量检查、可复算明细、图表与建议 |
+| 品牌内容、活动与GEO选题 | [灵熙内容策划](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-content-plan-v0.3.0.zip) | 内容日历、活动brief、素材与指标 |
+| 会议纪要、客户跟进、周报月报 | [灵熙专业文档](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-professional-output-v0.3.0.zip) | 可编辑文档、行动项、待确认信息 |
+| 方案/报告/邮件文字润色 | [灵熙文字润色](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-writing-polish-v0.3.0.zip) | 保留事实与口吻的最终改稿 |
+| 多步骤任务、不知道选哪个 | [灵熙工作任务助手](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-delivery-v0.3.0.zip) | 任务拆解、流程选择与交付检查 |
 
-## 下载与导入
+按工作需要选技能，无需一次导入全部 8 个。每个链接下载一个独立 ZIP，`SKILL.md` 在包根目录；在 WorkBuddy 的「专家·技能·连接器 → 技能 → 添加技能 → 上传技能」选择它。
 
-在 [v0.2.0 下载页](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/tag/v0.2.0) 下载 5 个 `workbuddy-*.zip`。在 WorkBuddy 的「专家·技能·连接器 → 技能 → 添加技能 → 上传技能」逐个上传。每个 ZIP 都是独立的技能包，`SKILL.md` 位于包根目录。
-
-| 技能包 | 员工会得到什么 |
-|---|---|
-| lynx-delivery | 把一句话需求转为明确任务，选择工作流程，组织交付 |
-| lynx-proposal-ppt | 客户方案、汇报大纲、可编辑 PPT、讲稿与页面检查 |
-| lynx-research | 客户/竞品/行业调研、带来源和日期的证据表 |
-| lynx-data-insight | CSV/Excel 质量检查、指标口径、分析和图表 |
-| lynx-professional-output | 调研报告、项目方案、会议行动项、周报/月报 |
-
-也可下载 `lynx-workbuddy-office-kit-v0.2.0.zip`，解压后交给 WorkBuddy 读取 `START-HERE.md`。完整仓库用于维护者管理模板和工具，不直接作为一个技能上传。
+**员工包不带安装脚本、运行依赖或外部账号配置，无需写代码或填写额外 API Key。** 技能使用你当前 WorkBuddy 已有的搜索、附件和 Office 能力；某项能力缺失时，AI 会说明缺口并交可审阅的中间成果。完整仓库包供维护者使用。
 
 ## 三句话开始工作
 
-- **做方案：**「使用灵熙方案与 PPT 技能，依据附件为客户制作品牌内容运营方案。先给我汇报对象、核心观点和逐页文案，确认后生成可编辑 PPT、讲稿和来源表。」
-- **调研客户：**「使用灵熙调研技能，调研【客户/品牌】的公开业务、产品、内容渠道和潜在需求。结论注明来源、日期及可信程度；不确定的写成待验证问题，给我首次沟通提纲。」
-- **分析数据：**「使用灵熙数据洞察技能，分析附件中的运营表格。先检查字段、时间、单位、缺失和重复，再按确认的指标计算，输出分析报告、可复核明细及图表。」
+- **客户调研：**「使用灵熙客户与数据调研，研究【客户/官网】的业务、产品、内容渠道和近期变化，为首次拜访准备简报。结论注明来源与日期，给我待验证问题。」
+- **做方案：**「使用灵熙方案与 PPT，依据附件为【客户】制作【主题】方案，给【汇报对象】说明【要解决的问题】。先形成核心观点与逐页文案，确认后生成可编辑 PPT，并核对数字和页面。」
+- **分析数据：**「使用灵熙数据洞察，分析附件中的运营表格，回答【业务问题】。先检查缺失、重复与口径，再交计算明细、图表和行动建议，保留原表。」
 
-完整示例见 [直接复制的任务指令](docs/examples.md)。
+更多场景见 [工作指令](docs/examples.md)，包括竞品简报、内容月计划、会议跟进与文字润色。
 
-## 适合公司的哪些工作
+## 这些技能适合公司的什么工作
 
-围绕灵熙智能的品牌资产管理、内容运营、GEO/AI 搜索可见度、媒介分发和客户服务工作。Kit 帮员工解释业务问题、搜集证据、设计方案并交付材料；这些领域是方案的业务场景。不会把某个客户的预算、架构或效果承诺当成公司的通用规定。
+围绕灵熙智能的品牌资产管理、内容运营、GEO/AI搜索可见度、媒介分发和客户服务工作。用户只需提供目标、客户材料与已确认范围，AI负责组织研究、计算、方案和文件。
 
-GEO 报告分别记录 AI 引用/提及、站点访问和真实转化；不能用一个指标代替另一个。客户案例、价格、效果和资源承诺只使用已核实且获准对外的材料。
+客户需求、价格、案例、排期与效果承诺使用已核实材料；未确认项单列。GEO报告分别记录AI引用/提及、访问和真实转化，不将三类指标混用。
 
-## GitHub 资源经过哪些筛选
+## 近期GitHub技能来源
 
-已核对 **10 个项目，推荐 8 个**，按任务、许可证、依赖、账号要求和维护状态整理。详见 [GitHub 资源目录](docs/github-resources.md) 与 [可读机器清单](resources.json)。
+本批核对 8 个候选技能库，从其中 **3 个来源的 13 项工作方法**整理成 **8 个中文 WorkBuddy 技能包**。以下来源均在 2026 年建立；星标与仓库维护时间于 **2026-10-10**核对。
 
-首批已接入：PptxGenJS 的可编辑 PPT 生成脚本、根据 marketingskills 改编的中文客户/竞品调研方法、本地 CSV/Excel 数据检查脚本。MarkItDown、pdfplumber、PaddleOCR 是按材料类型选用的提取工具。Tavily、GPT Researcher、Data Formulator 作为需要配置时的增强资源，由维护者接入。
+| 来源 | 星标约数 | 仓库最近推送 | 本批使用的工作方法 |
+|---|---:|---|---|
+| [知识工作技能](https://github.com/anthropics/knowledge-work-plugins) | 2.8万 | 2026-10-09 | 客户研究、售前方案、竞品判断、数据检查、会议交付 |
+| [营销技能](https://github.com/coreyhaines31/marketingskills) | 5.4万 | 2026-10-08 | 客户研究、竞品画像、内容策略、营销方案、GEO事实检查 |
+| [Humanizer文字编辑](https://github.com/blader/humanizer) | 5.5万 | 2026-09-28 | 保留事实、减少空话、贴近作者口吻 |
 
-**有下载链接不等于已在 WorkBuddy 中集成。** 目录逐项标明「已接入 / 按需调用 / 管理员配置 / 未选用」。员工优先使用 WorkBuddy 已有的文件、搜索和演示能力；没有对应能力时，AI 解释缺口并给出可审阅的中间成果，不能把大纲称为已经完成的 PPT。
+员工下载的是本项目整理的中文办公版。固定提交、**具体技能文件的修改日期**、对应包与许可见 [GitHub技能目录](docs/github-resources.md)；仓库最近推送不代表每项技能都在同日修改。需要部署的工具项目已移到维护资料。
+
+## AI培训学习
+
+需要补充基础知识时，阅读 [第一期与第二期正式课件](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/tree/main/training)：第一期6讲、第二期5份，共11份PDF。按期别在线阅读或单独下载，不作为技能上传。
 
 ## 验证与维护
 
-[结构与工具验证](docs/verification.md) · [维护方法](docs/maintenance.md) · [工作方式](docs/architecture.md) · [工具说明](docs/tools.md) · [来源与许可](docs/sources.md)
+[检查范围](docs/verification.md) · [维护方法](docs/maintenance.md) · [工作方式](docs/architecture.md) · [维护工具](docs/tools.md) · [来源与许可](docs/sources.md)
 
-本版本已做本地自动化检查，真实员工的 WorkBuddy 导入、客户材料产出和现场 PPT 视觉验收仍需试用记录。`check` 命令只核对成果文件与证据记录结构。
+技能包已核对格式、自包含引用、许可与内容；本地及CI检查通过后发布。真实员工的WorkBuddy导入、账号能力与客户成果仍需试用记录。
 
-仓库地址保留 `lynx-vibecoding-kit`，当前产品名称与使用路径已改为 WorkBuddy 工作 Kit。
+仓库地址保留 `lynx-vibecoding-kit`，员工入口是 WorkBuddy 工作技能。

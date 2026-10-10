@@ -1,6 +1,11 @@
-# 第三方来源与许可
+# 第三方来源与改编
 
-- 客户/竞品研究方法：根据 [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff/skills) 的 customer-research、competitor-profiling 及其参考资料改编。MIT，Copyright (c) 2025 Corey Haines。原许可见 [技能内许可](skills/lynx-research/references/marketingskills-LICENSE.txt)。已改写为中文、加入灵熙业务与证据规范；未引入固定激励金额、SaaS PMF 基准或原工具平台路径。
-- PPT 生成依赖：[PptxGenJS](https://github.com/gitbrent/PptxGenJS)，版本 4.0.1，MIT。依赖由包管理器安装，发布 ZIP 不携带 node_modules。原许可随 npm 包提供，安装后必须保留。
-- Excel 读取可选依赖：[openpyxl](https://foss.heptapod.net/openpyxl/openpyxl)，3.1.5，MIT。发布 ZIP 不携带第三方 Python 包。
-- 资源目录中其余项目只提供来源链接、筛选和接入说明，没有复制上游代码或宣称公司维护。上游内容的许可证与服务条款需按实际版本核对。
+v0.3.0选用三组开源技能方法，固定提交、具体路径与文件修改日见 [resources.json](resources.json)。每个改编技能内含相应完整许可和变更说明。
+
+- [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)：Apache-2.0。改编客户研究、客户方案、竞争判断、数据探索/验证/图表和客户会议交付流程；移除原平台产物、强制CRM/数据仓库/连接器前提，使用WorkBuddy已有工具与用户附件。
+- [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)：MIT，Copyright(c)2025 Corey Haines。改编客户研究、竞品画像、内容策略、营销计划与GEO事实检查；加入中文公司场景、证据与不承诺效果要求，不携带付费营销API或发布工具。
+- [blader/humanizer](https://github.com/blader/humanizer)：MIT，Copyright(c)2025 Siqi Chen。改编文字编辑与事实保留方法，针对中文客户方案、报告和品牌文字；不增加事实或更改承诺。
+
+这些是灵熙智能改编的WorkBuddy办公版，不是上游原包或官方WorkBuddy发行版。公司新增内容遵循各技能LICENSE.txt；上游权利和许可保留。未执行上游安装脚本或复制专有Office技能。
+
+维护者代码另使用PptxGenJS4.0.1与可选openpyxl3.1.5（MIT），不进入员工技能ZIP；依赖安装后的原许可需保留。原工具选择记录见 [维护资料](docs/maintenance-resources.md)。

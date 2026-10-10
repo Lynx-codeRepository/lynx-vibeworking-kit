@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "organization": "Lynx-codeRepository",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "profiles": [
     {
       "id": "proposal-ppt",
@@ -26,7 +26,7 @@
     },
     {
       "id": "client-research",
-      "title": "客户与竞品调研",
+      "title": "客户调研",
       "audience": [
         "业务",
         "运营",
@@ -127,6 +127,69 @@
         "可编辑报告",
         "行动项",
         "事实与待确认项"
+      ]
+    },
+    {
+      "id": "competitive-brief",
+      "title": "竞品与行业比较",
+      "audience": [
+        "业务",
+        "运营",
+        "研发新人"
+      ],
+      "examples": [
+        "竞品与行业比较"
+      ],
+      "recipe": "skills/lynx-delivery/references/packs/competitive-brief.md",
+      "skill": "lynx-competitive-brief",
+      "repositories": [],
+      "tools": [],
+      "outputs": [
+        "竞争简报",
+        "证据矩阵",
+        "来源与待验证问题"
+      ]
+    },
+    {
+      "id": "content-plan",
+      "title": "内容与活动策划",
+      "audience": [
+        "业务",
+        "运营",
+        "研发新人"
+      ],
+      "examples": [
+        "内容与活动策划"
+      ],
+      "recipe": "skills/lynx-delivery/references/packs/content-plan.md",
+      "skill": "lynx-content-plan",
+      "repositories": [],
+      "tools": [],
+      "outputs": [
+        "可编辑内容日历",
+        "活动brief",
+        "指标与素材缺口"
+      ]
+    },
+    {
+      "id": "writing-polish",
+      "title": "商务文字润色",
+      "audience": [
+        "业务",
+        "运营",
+        "研发新人"
+      ],
+      "examples": [
+        "商务文字润色"
+      ],
+      "recipe": "skills/lynx-delivery/references/packs/writing-polish.md",
+      "skill": "lynx-writing-polish",
+      "repositories": [],
+      "tools": [],
+      "outputs": [
+        "润色后的正文或文件",
+        "必要修改说明",
+        "事实待核对项"
       ]
     }
   ]

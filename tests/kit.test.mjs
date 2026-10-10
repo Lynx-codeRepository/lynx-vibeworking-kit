@@ -29,10 +29,10 @@ async function addOutput(directory) {
 }
 
 test('Kit 任务、技能与本地导航完整', async () => {
-  assert.deepEqual(await validateKit(), { passed: true, profiles: 6, skills: 5, problems: [] });
+  assert.deepEqual(await validateKit(), { passed: true, profiles: 9, skills: 8, problems: [] });
 });
 
-test('六类办公任务生成正确类型且不伪造完成状态', async t => {
+test('九类办公任务生成正确类型且不伪造完成状态', async t => {
   const temporary = await fixture(t);
   for (const profile of (await readCatalog()).profiles) {
     const target = path.join(temporary, profile.id);
@@ -40,7 +40,9 @@ test('六类办公任务生成正确类型且不伪造完成状态', async t => 
     const config = JSON.parse(await fs.readFile(path.join(target, '.lynx-kit/config.json')));
     assert.equal(config.profile, profile.id);
     assert.equal((await checkProject(target)).passed, false);
-    assert.equal((await fs.stat(path.join(target, '.agents/skills/lynx-delivery/SKILL.md'))).isFile(), true);
+    for (const skill of ['lynx-delivery', profile.skill]) {
+      assert.equal((await fs.stat(path.join(target, `.agents/skills/${skill}/SKILL.md`))).isFile(), true);
+    }
   }
 });
 

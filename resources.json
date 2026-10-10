@@ -2,203 +2,319 @@
   "schemaVersion": 1,
   "checkedAt": "2026-10-10",
   "criteria": [
-    "任务匹配",
-    "许可可用",
-    "员工入口",
-    "依赖/账号清晰",
-    "维护状态",
-    "证据可核对"
+    "实际任务匹配",
+    "优先近期创建且维护的技能库",
+    "星标认可度",
+    "员工免配置",
+    "许可与自包含",
+    "记录技能实际修改日期"
   ],
+  "selectedSources": 3,
+  "selectedSkillMethods": 13,
+  "workbuddyPackages": 8,
   "resources": [
     {
-      "repository": "gitbrent/PptxGenJS",
-      "url": "https://github.com/gitbrent/PptxGenJS",
-      "license": "MIT",
+      "repository": "anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "license": "Apache-2.0",
       "archived": false,
-      "pushedAt": "2025-11-28T20:17:14Z",
-      "revision": "3c9ec1b687c174952166f6a34b5e87ebf69fa469",
+      "stars": 28340,
+      "createdAt": "2026-01-23T20:11:54Z",
+      "pushedAt": "2026-10-09T21:48:47Z",
+      "revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
       "checkedAt": "2026-10-10",
-      "task": "方案/PPT",
-      "integration": "已接入",
-      "purpose": "自编生成器使用 PptxGenJS 4.0.1，原生文本/表格/图表与讲稿。",
-      "employeeEntry": "WorkBuddy 现成 PPT 能力优先；没有时 AI/维护者安装技能内固定依赖并运行 build_deck.mjs。",
-      "dependencies": "Node 22+ 与本地 npm 依赖，无单独模型账号。",
-      "dataHandling": "本地生成不上传客户资料；npm 安装会下载依赖。",
-      "limitations": "不保留任意品牌模板；需逐页视觉检查，脚本未替代专业排版。",
+      "integration": "中文办公改编并打包",
+      "purpose": "客户研究、售前方案、竞争比较、数据探索/复核和客户会议交付",
+      "employeeEntry": "下载本项目独立WorkBuddy技能ZIP，上传后用中文任务指令",
+      "dependencies": "技能包无运行依赖、无API Key或外部账号要求；使用当前WorkBuddy搜索/文件/Office能力",
+      "dataHandling": "改编包无联网脚本；材料处理与联网行为通过用户当前WorkBuddy工具及其配置进行",
+      "limitations": "仓库维护日期不等于每个技能修改日期；原文件修改日逐项记录。已做包结构和引用检查，真实员工导入与业务产物尚需试用。",
       "selected": true,
-      "sourceSnapshot": "https://github.com/gitbrent/PptxGenJS/tree/3c9ec1b687c174952166f6a34b5e87ebf69fa469",
-      "verification": "已核对 GitHub 元数据、README/相关技能及许可；运行验证仅对本 Kit 接入的自编工具进行。"
-    },
-    {
-      "repository": "microsoft/markitdown",
-      "url": "https://github.com/microsoft/markitdown",
-      "license": "MIT",
-      "archived": false,
-      "pushedAt": "2026-10-04T03:59:52Z",
-      "revision": "4cc9fa17653d695d64fb9eee5b33d4de55ff84e8",
-      "checkedAt": "2026-10-10",
-      "task": "附件预处理",
-      "integration": "按需调用",
-      "purpose": "Office/PDF 转 Markdown，适合先提取资料，不能生成 PPT。",
-      "employeeEntry": "员工直接交附件；现成读取失败时维护者配置转换工具。",
-      "dependencies": "Python 与按格式选择的依赖；纯本地转换无模型账号，AI 图片描述等路径另配账号。",
-      "dataHandling": "本地转换路径可离线；选择外部 AI 描述时会发送相应内容。",
-      "limitations": "布局会丢失；扫描件与复杂图表需 OCR 或人工复核。未在本 Kit 安装。",
-      "selected": true,
-      "sourceSnapshot": "https://github.com/microsoft/markitdown/tree/4cc9fa17653d695d64fb9eee5b33d4de55ff84e8",
-      "verification": "已核对 GitHub 元数据、README/相关技能及许可；运行验证仅对本 Kit 接入的自编工具进行。"
+      "sourceSnapshot": "https://github.com/anthropics/knowledge-work-plugins/tree/95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
+      "skills": [
+        {
+          "path": "data/skills/data-visualization/SKILL.md",
+          "url": "https://github.com/anthropics/knowledge-work-plugins/blob/95bdacc803aa5cfdb10f35e5b9fb2d4b11100133/data/skills/data-visualization/SKILL.md",
+          "lastContentDate": "2026-03-13T15:57:57Z",
+          "lastContentCommit": "2d6f7e22dd25593f0f748010430ef86f19659735",
+          "sourceSha256": "5811e8b3547cda6bc8af118aaf0d7589e8861cdc9facce6372dc78aea99ab87d",
+          "adaptedTo": [
+            "lynx-data-insight"
+          ]
+        },
+        {
+          "path": "data/skills/explore-data/SKILL.md",
+          "url": "https://github.com/anthropics/knowledge-work-plugins/blob/95bdacc803aa5cfdb10f35e5b9fb2d4b11100133/data/skills/explore-data/SKILL.md",
+          "lastContentDate": "2026-03-13T15:57:57Z",
+          "lastContentCommit": "2d6f7e22dd25593f0f748010430ef86f19659735",
+          "sourceSha256": "af7590fa616360259da712b5ede5f79b817beb854c47a465f95774354988e8a2",
+          "adaptedTo": [
+            "lynx-data-insight"
+          ]
+        },
+        {
+          "path": "data/skills/validate-data/SKILL.md",
+          "url": "https://github.com/anthropics/knowledge-work-plugins/blob/95bdacc803aa5cfdb10f35e5b9fb2d4b11100133/data/skills/validate-data/SKILL.md",
+          "lastContentDate": "2026-03-13T15:57:57Z",
+          "lastContentCommit": "2d6f7e22dd25593f0f748010430ef86f19659735",
+          "sourceSha256": "1e424822043480375b80aef9416227b1c8083af749ca536568716265f79ca54b",
+          "adaptedTo": [
+            "lynx-data-insight"
+          ]
+        },
+        {
+          "path": "sales/skills/account-research/SKILL.md",
+          "url": "https://github.com/anthropics/knowledge-work-plugins/blob/95bdacc803aa5cfdb10f35e5b9fb2d4b11100133/sales/skills/account-research/SKILL.md",
+          "lastContentDate": "2026-09-15T14:44:03Z",
+          "lastContentCommit": "c66cd2d204d9db2a9a49401f34e0b95d7d05cd46",
+          "sourceSha256": "97e1e9884149f7801cfc60c3e9119f37a66c53b30f730ab7b4a2862eedabdb05",
+          "adaptedTo": [
+            "lynx-research"
+          ]
+        },
+        {
+          "path": "sales/skills/call-summary/SKILL.md",
+          "url": "https://github.com/anthropics/knowledge-work-plugins/blob/95bdacc803aa5cfdb10f35e5b9fb2d4b11100133/sales/skills/call-summary/SKILL.md",
+          "lastContentDate": "2026-09-15T14:44:03Z",
+          "lastContentCommit": "c66cd2d204d9db2a9a49401f34e0b95d7d05cd46",
+          "sourceSha256": "23d174b441604a2f333aa671ec1b6130018c56018c6375620c8a41ed13e92819",
+          "adaptedTo": [
+            "lynx-professional-output"
+          ]
+        },
+        {
+          "path": "sales/skills/competitive-intelligence/SKILL.md",
+          "url": "https://github.com/anthropics/knowledge-work-plugins/blob/95bdacc803aa5cfdb10f35e5b9fb2d4b11100133/sales/skills/competitive-intelligence/SKILL.md",
+          "lastContentDate": "2026-09-15T14:44:03Z",
+          "lastContentCommit": "c66cd2d204d9db2a9a49401f34e0b95d7d05cd46",
+          "sourceSha256": "4bac0057b05869c1d627b64f6950464e7ea2332e7544dcfd223f9a3d0830e0ca",
+          "adaptedTo": [
+            "lynx-competitive-brief"
+          ]
+        },
+        {
+          "path": "sales/skills/create-an-asset/SKILL.md",
+          "url": "https://github.com/anthropics/knowledge-work-plugins/blob/95bdacc803aa5cfdb10f35e5b9fb2d4b11100133/sales/skills/create-an-asset/SKILL.md",
+          "lastContentDate": "2026-09-15T14:44:03Z",
+          "lastContentCommit": "c66cd2d204d9db2a9a49401f34e0b95d7d05cd46",
+          "sourceSha256": "8e9acec41654e245a229c2ed79915a952b628b1491df0c325197aa518175762b",
+          "adaptedTo": [
+            "lynx-proposal-ppt"
+          ]
+        }
+      ],
+      "verification": "GitHub API核对星标、创建/推送时间、固定提交与技能文件修改时间；读取选用技能和适用许可；未执行上游安装或连接器。"
     },
     {
       "repository": "coreyhaines31/marketingskills",
       "url": "https://github.com/coreyhaines31/marketingskills",
       "license": "MIT",
       "archived": false,
+      "stars": 53948,
+      "createdAt": "2026-01-15T19:45:23Z",
       "pushedAt": "2026-10-08T21:51:51Z",
       "revision": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
       "checkedAt": "2026-10-10",
-      "task": "客户/竞品调研",
-      "integration": "已接入",
-      "purpose": "改编 customer-research / competitor-profiling 方法，提供中文来源与访谈流程。",
-      "employeeEntry": "上传 lynx-research 技能，直接说客户/行业/数据问题。",
-      "dependencies": "改编方法无需额外账号；检索使用当前 WorkBuddy 能力。",
-      "dataHandling": "方法本身无网络请求；联网工具的数据范围另核对。",
-      "limitations": "上游部分为 SaaS 场景；去除固定激励/PMF 阈值与原平台路径，保留 MIT 许可。",
+      "integration": "中文办公改编并打包",
+      "purpose": "客户研究、竞品画像、内容策略、营销方案与GEO事实检查",
+      "employeeEntry": "下载本项目独立WorkBuddy技能ZIP，上传后用中文任务指令",
+      "dependencies": "技能包无运行依赖、无API Key或外部账号要求；使用当前WorkBuddy搜索/文件/Office能力",
+      "dataHandling": "改编包无联网脚本；材料处理与联网行为通过用户当前WorkBuddy工具及其配置进行",
+      "limitations": "仓库维护日期不等于每个技能修改日期；原文件修改日逐项记录。已做包结构和引用检查，真实员工导入与业务产物尚需试用。",
       "selected": true,
       "sourceSnapshot": "https://github.com/coreyhaines31/marketingskills/tree/1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
-      "verification": "已核对 GitHub 元数据、README/相关技能及许可；运行验证仅对本 Kit 接入的自编工具进行。"
+      "skills": [
+        {
+          "path": "skills/ai-seo/SKILL.md",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff/skills/ai-seo/SKILL.md",
+          "lastContentDate": "2026-10-08T21:01:19Z",
+          "lastContentCommit": "ac69fe6c8b7377047c859aded6759162192a1582",
+          "sourceSha256": "97424245fab155d065e39fae5fda8c031bb2f195083411842379fddb5e035e03",
+          "adaptedTo": [
+            "lynx-content-plan"
+          ]
+        },
+        {
+          "path": "skills/competitor-profiling/SKILL.md",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff/skills/competitor-profiling/SKILL.md",
+          "lastContentDate": "2026-10-07T23:41:25Z",
+          "lastContentCommit": "f51d91575512852a403d425e128df7f344f58c2a",
+          "sourceSha256": "ed74677eb8dfe4a3c97ccb0f7f1a1070dc6aed1d93836ed9322d99d86e558928",
+          "adaptedTo": [
+            "lynx-competitive-brief",
+            "lynx-research"
+          ]
+        },
+        {
+          "path": "skills/content-strategy/SKILL.md",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff/skills/content-strategy/SKILL.md",
+          "lastContentDate": "2026-10-07T17:44:49Z",
+          "lastContentCommit": "4ca2d4c623e45f3aa7d0aaefcd33abc4331d77a2",
+          "sourceSha256": "dce9f4027ae129691e92623541a360bee9356137a7eecf68afa95674af118e68",
+          "adaptedTo": [
+            "lynx-content-plan"
+          ]
+        },
+        {
+          "path": "skills/customer-research/SKILL.md",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff/skills/customer-research/SKILL.md",
+          "lastContentDate": "2026-10-03T00:32:49Z",
+          "lastContentCommit": "a8ac2636ec38004c5a6ab08acde9d68f2d3d0e22",
+          "sourceSha256": "905e65e67268448d88b3b96cf045c6b3615cdd87c1060e129b148a31aa627669",
+          "adaptedTo": [
+            "lynx-research"
+          ]
+        },
+        {
+          "path": "skills/marketing-plan/SKILL.md",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff/skills/marketing-plan/SKILL.md",
+          "lastContentDate": "2026-10-06T22:19:51Z",
+          "lastContentCommit": "1c6145446b006a2f972f0eb4372e4e0f4c42d092",
+          "sourceSha256": "36cfcf3485c1e733741706a1408acabd2778738706db174cc7b1e6ca634de37c",
+          "adaptedTo": [
+            "lynx-proposal-ppt",
+            "lynx-content-plan"
+          ]
+        }
+      ],
+      "verification": "GitHub API核对星标、创建/推送时间、固定提交与技能文件修改时间；读取选用技能和适用许可；未执行上游安装或连接器。"
     },
     {
-      "repository": "tavily-ai/skills",
-      "url": "https://github.com/tavily-ai/skills",
+      "repository": "blader/humanizer",
+      "url": "https://github.com/blader/humanizer",
       "license": "MIT",
       "archived": false,
-      "pushedAt": "2026-09-04T15:16:07Z",
-      "revision": "778122e5f9c680f541eeceda5a5b36405eb7980c",
+      "stars": 55261,
+      "createdAt": "2026-01-18T05:30:15Z",
+      "pushedAt": "2026-09-28T05:55:12Z",
+      "revision": "225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
       "checkedAt": "2026-10-10",
-      "task": "联网搜索/深度研究",
-      "integration": "管理员配置",
-      "purpose": "可选搜索/提取/研究技能，作为 WorkBuddy 现有搜索的增强。",
-      "employeeEntry": "现有搜索不足时由维护者接入；不让员工自动执行网页安装脚本。",
-      "dependencies": "搜索/提取目前有免密限额模式；research/map/crawl 要认证。额外 CLI/服务额度按账号核对。",
-      "dataHandling": "查询和相关内容会发到外部搜索服务。",
-      "limitations": "不是全部免费免配置；未在本 Kit 安装或验证服务，费用/额度不作承诺。",
+      "integration": "中文办公改编并打包",
+      "purpose": "已有方案、报告和品牌文字的自然表达与事实保留",
+      "employeeEntry": "下载本项目独立WorkBuddy技能ZIP，上传后用中文任务指令",
+      "dependencies": "技能包无运行依赖、无API Key或外部账号要求；使用当前WorkBuddy搜索/文件/Office能力",
+      "dataHandling": "改编包无联网脚本；材料处理与联网行为通过用户当前WorkBuddy工具及其配置进行",
+      "limitations": "仓库维护日期不等于每个技能修改日期；原文件修改日逐项记录。已做包结构和引用检查，真实员工导入与业务产物尚需试用。",
       "selected": true,
-      "sourceSnapshot": "https://github.com/tavily-ai/skills/tree/778122e5f9c680f541eeceda5a5b36405eb7980c",
-      "verification": "已核对 GitHub 元数据、README/相关技能及许可；运行验证仅对本 Kit 接入的自编工具进行。"
+      "sourceSnapshot": "https://github.com/blader/humanizer/tree/225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
+      "skills": [
+        {
+          "path": "SKILL.md",
+          "url": "https://github.com/blader/humanizer/blob/225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8/SKILL.md",
+          "lastContentDate": "2026-09-28T04:47:28Z",
+          "lastContentCommit": "d4b81278e6604e237bf32f0f7ce5c217aee94269",
+          "sourceSha256": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad",
+          "adaptedTo": [
+            "lynx-writing-polish"
+          ]
+        }
+      ],
+      "verification": "GitHub API核对星标、创建/推送时间、固定提交与技能文件修改时间；读取选用技能和适用许可；未执行上游安装或连接器。"
     },
     {
-      "repository": "assafelovic/gpt-researcher",
-      "url": "https://github.com/assafelovic/gpt-researcher",
-      "license": "Apache-2.0",
+      "repository": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "license": "按子技能许可核对",
       "archived": false,
-      "pushedAt": "2026-10-01T19:33:35Z",
-      "revision": "0957c301ed06c2a5857b834358c7227c739041d4",
+      "stars": 180191,
+      "createdAt": "2025-09-22T15:53:31Z",
+      "pushedAt": "2026-10-09T18:45:52Z",
+      "revision": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
       "checkedAt": "2026-10-10",
-      "task": "多来源深度研究",
-      "integration": "管理员配置",
-      "purpose": "独立研究服务，可汇集网页/本地材料并生成引用报告。",
-      "employeeEntry": "维护者部署并提供受控入口后使用，非员工默认安装。",
-      "dependencies": "Python 3.12+、模型/搜索配置；典型示例需要 OpenAI/Tavily 账号，可按上游支持替换。",
-      "dataHandling": "模型/搜索服务可能接收问题、摘记和文件内容，按部署核对。",
-      "limitations": "部署与调用成本需实测；自动引用仍需核对原文。未部署验证。",
-      "selected": true,
-      "sourceSnapshot": "https://github.com/assafelovic/gpt-researcher/tree/0957c301ed06c2a5857b834358c7227c739041d4",
-      "verification": "已核对 GitHub 元数据、README/相关技能及许可；运行验证仅对本 Kit 接入的自编工具进行。"
-    },
-    {
-      "repository": "microsoft/data-formulator",
-      "url": "https://github.com/microsoft/data-formulator",
-      "license": "MIT",
-      "archived": false,
-      "pushedAt": "2026-10-08T04:58:44Z",
-      "revision": "5477f0e236426dc8f74a498ec400414fba7fbc0f",
-      "checkedAt": "2026-10-10",
-      "task": "数据可视化探索",
-      "integration": "管理员配置",
-      "purpose": "交互数据探索与 AI 辅助图表，支持多种表格材料。",
-      "employeeEntry": "维护者先配置环境/模型，员工在准备好的界面上传已授权数据。",
-      "dependencies": "Python/Web 服务及模型配置，服务用法以当前版本核对。",
-      "dataHandling": "模型路径可能发送数据摘记/表格；本地界面不等于所有数据本地处理。",
-      "limitations": "未集成 WorkBuddy，未运行试用；不绕过预览安装包的系统安全提示。",
-      "selected": true,
-      "sourceSnapshot": "https://github.com/microsoft/data-formulator/tree/5477f0e236426dc8f74a498ec400414fba7fbc0f",
-      "verification": "已核对 GitHub 元数据、README/相关技能及许可；运行验证仅对本 Kit 接入的自编工具进行。"
-    },
-    {
-      "repository": "jsvine/pdfplumber",
-      "url": "https://github.com/jsvine/pdfplumber",
-      "license": "MIT",
-      "archived": false,
-      "pushedAt": "2026-08-06T00:46:50Z",
-      "revision": "4c64b92d5caccd71c645e98e0fabb0c4dba7ff45",
-      "checkedAt": "2026-10-10",
-      "task": "PDF 表格提取",
-      "integration": "按需调用",
-      "purpose": "本地 PDF 文字/表格提取，适合机器生成的文档。",
-      "employeeEntry": "PDF 读取失败时由 AI/维护者配置并复核提取结果。",
-      "dependencies": "Python 及 pdfplumber 依赖，无外部模型账号。",
-      "dataHandling": "正常本地提取不上传。",
-      "limitations": "不是 OCR，扫描页不可靠它恢复文字；复杂表格须抽查。未安装在本 Kit。",
-      "selected": true,
-      "sourceSnapshot": "https://github.com/jsvine/pdfplumber/tree/4c64b92d5caccd71c645e98e0fabb0c4dba7ff45",
-      "verification": "已核对 GitHub 元数据、README/相关技能及许可；运行验证仅对本 Kit 接入的自编工具进行。"
-    },
-    {
-      "repository": "PaddlePaddle/PaddleOCR",
-      "url": "https://github.com/PaddlePaddle/PaddleOCR",
-      "license": "Apache-2.0",
-      "archived": false,
-      "pushedAt": "2026-09-16T03:31:50Z",
-      "revision": "dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf",
-      "checkedAt": "2026-10-10",
-      "task": "扫描/图片识别",
-      "integration": "管理员配置",
-      "purpose": "中文扫描件与图片 OCR/结构识别。",
-      "employeeEntry": "维护者准备模型和环境后，AI 将无法读的资料转为可核对文本。",
-      "dependencies": "Python、Paddle 相关环境及模型下载；具体运行资源按模型核对。",
-      "dataHandling": "本地模型可本地处理；若用云接口另核对发送内容。",
-      "limitations": "比普通文字提取部署重，关键数字/单位必须核对原页；未在本 Kit 部署。",
-      "selected": true,
-      "sourceSnapshot": "https://github.com/PaddlePaddle/PaddleOCR/tree/dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf",
-      "verification": "已核对 GitHub 元数据、README/相关技能及许可；运行验证仅对本 Kit 接入的自编工具进行。"
-    },
-    {
-      "repository": "yinqd3/workbuddy-skills",
-      "url": "https://github.com/yinqd3/workbuddy-skills",
-      "license": "MIT",
-      "archived": false,
-      "pushedAt": "2026-06-03T06:21:16Z",
-      "revision": "aa9a86a96aef605bc87285b51ffb34b2e51f7aff",
-      "checkedAt": "2026-10-10",
-      "task": "PPT 技能候选",
-      "integration": "未选用",
-      "purpose": "调查了其 pptx-generator 技能，但不作为可上传成品。",
-      "employeeEntry": "改用上游 PptxGenJS 和公司生成器。",
-      "dependencies": "上游示例有环境/版本假设。",
-      "dataHandling": "未运行。",
-      "limitations": "固定提交中 SKILL 引用 references/ 文件，而仓库实际文件平铺，引用缺失；不能直接保证新员工可用。",
+      "integration": "本批未选用",
+      "purpose": "Office子技能的许可为专有服务条款，不按可自由再分发的开源包处理；不复制发布这些文件。",
+      "employeeEntry": "不作为员工默认入口",
+      "dependencies": "未打包；按上游能力、许可和依赖另行评估",
+      "dataHandling": "未运行上游工具或发送客户材料",
+      "limitations": "Office子技能的许可为专有服务条款，不按可自由再分发的开源包处理；不复制发布这些文件。",
       "selected": false,
-      "sourceSnapshot": "https://github.com/yinqd3/workbuddy-skills/tree/aa9a86a96aef605bc87285b51ffb34b2e51f7aff",
-      "verification": "已核对 GitHub 元数据、README/相关技能及许可；运行验证仅对本 Kit 接入的自编工具进行。"
+      "sourceSnapshot": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "skills": [],
+      "verification": "GitHub API核对星标、创建/推送时间、固定提交与技能文件修改时间；读取选用技能和适用许可；未执行上游安装或连接器。"
     },
     {
-      "repository": "langchain-ai/open_deep_research",
-      "url": "https://github.com/langchain-ai/open_deep_research",
-      "license": "MIT",
-      "archived": true,
-      "pushedAt": "2026-08-10T18:13:37Z",
-      "revision": "1b7d2e80db9faa586165c60e09096dbbfd483a64",
+      "repository": "openai/skills",
+      "url": "https://github.com/openai/skills",
+      "license": "按子技能许可核对",
+      "archived": false,
+      "stars": 27964,
+      "createdAt": "2025-11-25T06:25:42Z",
+      "pushedAt": "2026-09-08T20:35:26Z",
+      "revision": "49f948faa9258a0c61caceaf225e179651397431",
       "checkedAt": "2026-10-10",
-      "task": "深度研究候选",
-      "integration": "未选用",
-      "purpose": "LangGraph 深度研究实现。",
-      "employeeEntry": "不作为默认资源。",
-      "dependencies": "服务部署/模型配置较重。",
-      "dataHandling": "可能使用外部模型/搜索。",
-      "limitations": "检查时 archived=true；选用仍维护的候选作为可配置方案。",
+      "integration": "本批未选用",
+      "purpose": "主要面向指定宿主、连接器或开发任务，不能仅换名字就承诺在WorkBuddy无配置运行。",
+      "employeeEntry": "不作为员工默认入口",
+      "dependencies": "未打包；按上游能力、许可和依赖另行评估",
+      "dataHandling": "未运行上游工具或发送客户材料",
+      "limitations": "主要面向指定宿主、连接器或开发任务，不能仅换名字就承诺在WorkBuddy无配置运行。",
       "selected": false,
-      "sourceSnapshot": "https://github.com/langchain-ai/open_deep_research/tree/1b7d2e80db9faa586165c60e09096dbbfd483a64",
-      "verification": "已核对 GitHub 元数据、README/相关技能及许可；运行验证仅对本 Kit 接入的自编工具进行。"
+      "sourceSnapshot": "https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431",
+      "skills": [],
+      "verification": "GitHub API核对星标、创建/推送时间、固定提交与技能文件修改时间；读取选用技能和适用许可；未执行上游安装或连接器。"
+    },
+    {
+      "repository": "alirezarezvani/claude-skills",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "license": "MIT",
+      "archived": false,
+      "stars": 27937,
+      "createdAt": "2025-10-19T04:04:05Z",
+      "pushedAt": "2026-08-30T09:46:16Z",
+      "revision": "19392f7a08264ed00486a251f5b2098321771f94",
+      "checkedAt": "2026-10-10",
+      "integration": "本批未选用",
+      "purpose": "市场研究方法有价值，但所查技能带脚本与参考依赖；本批优先更直接的客户研究与营销流程，留作候选。",
+      "employeeEntry": "不作为员工默认入口",
+      "dependencies": "未打包；按上游能力、许可和依赖另行评估",
+      "dataHandling": "未运行上游工具或发送客户材料",
+      "limitations": "市场研究方法有价值，但所查技能带脚本与参考依赖；本批优先更直接的客户研究与营销流程，留作候选。",
+      "selected": false,
+      "sourceSnapshot": "https://github.com/alirezarezvani/claude-skills/tree/19392f7a08264ed00486a251f5b2098321771f94",
+      "skills": [],
+      "verification": "GitHub API核对星标、创建/推送时间、固定提交与技能文件修改时间；读取选用技能和适用许可；未执行上游安装或连接器。"
+    },
+    {
+      "repository": "JimLiu/baoyu-skills",
+      "url": "https://github.com/JimLiu/baoyu-skills",
+      "license": "MIT",
+      "archived": false,
+      "stars": 26497,
+      "createdAt": "2026-01-13T03:04:56Z",
+      "pushedAt": "2026-09-10T15:13:43Z",
+      "revision": "1567581c26ec29f4216c6e6835415bf30343b0e3",
+      "checkedAt": "2026-10-10",
+      "integration": "本批未选用",
+      "purpose": "slide-deck以逐页图片为主要产物，并需要运行时/图像生成工具，不符合本批可编辑PPT与免配置要求。",
+      "employeeEntry": "不作为员工默认入口",
+      "dependencies": "未打包；按上游能力、许可和依赖另行评估",
+      "dataHandling": "未运行上游工具或发送客户材料",
+      "limitations": "slide-deck以逐页图片为主要产物，并需要运行时/图像生成工具，不符合本批可编辑PPT与免配置要求。",
+      "selected": false,
+      "sourceSnapshot": "https://github.com/JimLiu/baoyu-skills/tree/1567581c26ec29f4216c6e6835415bf30343b0e3",
+      "skills": [],
+      "verification": "GitHub API核对星标、创建/推送时间、固定提交与技能文件修改时间；读取选用技能和适用许可；未执行上游安装或连接器。"
+    },
+    {
+      "repository": "ComposioHQ/awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "license": "按子技能许可核对",
+      "archived": false,
+      "stars": 76763,
+      "createdAt": "2025-10-17T07:15:01Z",
+      "pushedAt": "2026-09-18T07:16:11Z",
+      "revision": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "checkedAt": "2026-10-10",
+      "integration": "本批未选用",
+      "purpose": "大型混合目录包含大量外部工具集成；未按整个集合推荐。所查会议行为分析与员工主要交付任务的匹配较低。",
+      "employeeEntry": "不作为员工默认入口",
+      "dependencies": "未打包；按上游能力、许可和依赖另行评估",
+      "dataHandling": "未运行上游工具或发送客户材料",
+      "limitations": "大型混合目录包含大量外部工具集成；未按整个集合推荐。所查会议行为分析与员工主要交付任务的匹配较低。",
+      "selected": false,
+      "sourceSnapshot": "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2",
+      "skills": [],
+      "verification": "GitHub API核对星标、创建/推送时间、固定提交与技能文件修改时间；读取选用技能和适用许可；未执行上游安装或连接器。"
     }
   ]
 }

@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import posixpath
 import subprocess
 import sys
 import tempfile
@@ -89,12 +90,13 @@ class OfficeChecks(unittest.TestCase):
         first = packager.build(self.directory / 'first')
         second = packager.build(self.directory / 'second')
         self.assertEqual(first, second)
-        self.assertEqual(len(first), 6)
+        self.assertEqual(len(first), 9)
         for item in first:
             with ZipFile(self.directory / 'first' / item['file']) as archive:
                 names = archive.namelist()
                 self.assertFalse(any('node_modules' in name or '__pycache__' in name or '..' in name.split('/') for name in names))
                 if item['file'].startswith('workbuddy-'):
+                    self.assertFalse(any(name.startswith('scripts/') or name.endswith(('.py', '.mjs', '.sh')) for name in names))
                     self.assertIn('SKILL.md', names)
                     self.assertIn('LICENSE.txt', names)
                     body = archive.read('SKILL.md').decode('utf-8')
@@ -107,8 +109,12 @@ class OfficeChecks(unittest.TestCase):
                         for link in re.findall(r'\[[^\]]*\]\(([^)]+)\)', markdown):
                             if re.match(r'^[a-z]+:', link):
                                 continue
-                            local = (Path(name).parent / link.split('#')[0]).as_posix()
+                            local = posixpath.normpath(posixpath.join(posixpath.dirname(name), link.split('#')[0]))
+                            self.assertFalse(local == '..' or local.startswith('../'))
                             self.assertIn(local, names, f'{name} -> {link}')
+                else:
+                    self.assertTrue(any(name.endswith('/skills/lynx-data-insight/scripts/data_quality.py') for name in names))
+                    self.assertTrue(any(name.endswith('/skills/lynx-proposal-ppt/scripts/build_deck.mjs') for name in names))
         with self.assertRaises(ValueError):
             packager.build(self.directory / 'first')
 

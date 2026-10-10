@@ -1,6 +1,6 @@
 {
   "name": "@lynx/workbuddy-office-kit",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "description": "灵熙智能 WorkBuddy 工作 Kit：客户方案与 PPT、客户/行业/数据调研、数据分析和专业报告。",
   "type": "module",

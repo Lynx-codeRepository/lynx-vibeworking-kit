@@ -1,23 +1,22 @@
 ---
 name: "lynx-data-insight"
 display_name: "灵熙数据洞察"
-display_name_en: "Lingxi data insight"
-description: "分析 CSV/Excel 运营、媒介、内容、客户或 GEO 数据时使用。先检查数据质量和指标口径，再计算、制图和输出可复核明细，适合零基础员工。"
-description_zh: "分析 CSV/Excel 运营、媒介、内容、客户或 GEO 数据时使用。先检查数据质量和指标口径，再计算、制图和输出可复核明细，适合零基础员工。"
-description_en: "Analyze CSV or Excel office data with quality checks, explicit metrics, reproducible calculations and clear limitations."
-version: "0.2.0"
+display_name_en: "Lingxi spreadsheet analysis"
+description: "分析Excel或CSV中的内容、媒介、客户运营、GEO数据，或复核数据报告时使用。检查质量、统一指标、计算和制图，并提供可复算明细。"
+description_zh: "分析Excel或CSV中的内容、媒介、客户运营、GEO数据，或复核数据报告时使用。检查质量、统一指标、计算和制图，并提供可复算明细。"
+description_en: "Lingxi spreadsheet analysis using existing WorkBuddy tools and supplied files."
+version: "0.3.0"
 author: "灵熙智能 / Lynx-codeRepository"
 ---
 
-# 先核对数据，再给结论
+# 从表格走到可复核判断
 
-读取 [分析方法与工具](references/analysis.md)。员工只需给原始附件和决策问题，计算步骤由你执行。
+读 [数据分析与复核方法](references/analysis.md)。员工只需交附件和业务问题，读取、计算和制图由你使用当前 WorkBuddy 工具完成。来源见 [改编记录](THIRD_PARTY_NOTICES.md)。
 
-1. 核对文件、工作表、字段、时间、单位、样本与授权范围。原文件不改。没读到附件就明确说未读到。
-2. 用已有表格工具做质量检查；需要本地检查时运行 [data_quality.py](scripts/data_quality.py)，按 [脚本用法](references/analysis.md) 选择列。检查缺失、重复、非法数值、公式缓存及异常范围，保存报告。脚本只做质量统计，不自动决定业务指标或改数据。
-3. 使用 [指标字典](templates/metric-dictionary.csv)，明确分子、分母、去重键、时间、单位与业务解释。不要自动把空值变成零，把日期、编号当数值或把币种混用。Excel 公式缓存是否最新不能靠文件读取证明。
-4. 确认计算范围和清洗方法后再分析。每个关键结论关联复核明细或可复算公式；百分比说明分母，变动幅度区分百分点和相对变化。AI 引用/提及、流量、真实转化分别计算。
-5. 图表服务于比较/趋势，轴、单位、期间、样本清楚。只有两点数据不描述长期规律；相关不等于因果，不把预测当实测。
-6. 输出可编辑分析报告、计算明细表、图表和 [检查/局限](templates/analysis-report.md)。按至少一项关键计算独立复核，不以脚本通过代替业务分析正确。
-
-示例 CSV 使用虚构渠道及金额，仅用于演练。XLSX 读取需可选依赖；CSV 无额外 Python 包。缺少能力时交中间检查与方法说明，不宣称已经完成分析。
+1. 核对实际读到的文件、工作表、数据粒度、期间、单位和字段。先了解一行代表什么，再汇总。原始文件保持不变。
+2. 检查缺失、重复、非法数值、异常范围、日期完整性与公式缓存。空值不等于零；没有明细就不能声称分析了全量数据。
+3. 用 [指标字典](templates/metric-dictionary.csv) 明确分子、分母、去重键、筛选与清洗方法。点击率/转化率使用总分子除以总分母，避免直接平均各渠道百分比。
+4. 围绕业务问题分析趋势、渠道/产品/人群差异，解释可支持的原因与仍需核实的假设。百分点与相对变化分别表达；AI引用、流量、真实转化分别统计。
+5. 用当前表格/图表工具输出可编辑计算明细与清楚的图表，标注轴、单位、期间、样本；没有相应工具就如实交付分析草稿，不让员工安装 Python 或依赖。
+6. 交付前复核至少一项关键计算、汇总与原表的对账、过滤/关联导致的重复或漏数、图表与正文是否一致。相关关系不能写成原因，预测不能写成实测。
+7. 输出 [分析报告](templates/analysis-report.md)、明细表、图表和待确认项，报告指出对哪个业务决定有用。

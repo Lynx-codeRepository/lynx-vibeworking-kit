@@ -1,4 +1,4 @@
-"""Build five standalone WorkBuddy skill ZIPs and a complete office kit."""
+"""Build eight configuration-free WorkBuddy skill ZIPs and a maintainer kit."""
 import argparse
 import hashlib
 import json
@@ -6,7 +6,7 @@ from pathlib import Path
 from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILLS = ['lynx-delivery', 'lynx-research', 'lynx-data-insight', 'lynx-proposal-ppt', 'lynx-professional-output']
+SKILLS = ['lynx-delivery', 'lynx-research', 'lynx-data-insight', 'lynx-proposal-ppt', 'lynx-professional-output', 'lynx-competitive-brief', 'lynx-content-plan', 'lynx-writing-polish']
 EXCLUDED = {'.git', 'node_modules', '__pycache__', 'work', 'dist', '.lynx-kit', '.venv'}
 
 
@@ -46,7 +46,10 @@ def build(output, root=ROOT):
         if not (source / 'SKILL.md').is_file():
             raise ValueError(f'缺少技能入口：{skill}')
         target = output / f'workbuddy-{skill}-v{version}.zip'
-        write_zip(target, list(files_in(source)), source)
+        # Employee packages use WorkBuddy's existing tools. Keep optional
+        # maintenance code and dependency manifests in the maintainer kit.
+        employee_files = [file for file in files_in(source) if file.relative_to(source).parts[0] != 'scripts']
+        write_zip(target, employee_files, source)
         generated.append(target)
     directories = ['bin', 'lib', 'skills', 'templates', 'docs', 'scripts', 'tests', '.github']
     names = ['README.md', 'START-HERE.md', 'AGENTS.md', 'LICENSE', 'THIRD_PARTY_NOTICES.md', 'catalog.json', 'resources.json', 'package.json', 'package-lock.json', '.gitignore']

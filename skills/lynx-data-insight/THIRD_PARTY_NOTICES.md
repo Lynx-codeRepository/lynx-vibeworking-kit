@@ -1,5 +1,13 @@
-# 来源与许可
+# 来源与改编 · lynx-data-insight
 
-本技能公司原创内容遵循 LICENSE.txt；上游链接内容按各自许可使用。
+检查日期：2026-10-10。本技能是灵熙智能中文办公改编版，不是上游原包或上游官方 WorkBuddy 发布。
 
-Excel 可选依赖 openpyxl 3.1.5，MIT；由维护者安装，保留包内许可证。
+修改：改写为中文工作步骤，使用公司业务场景与证据要求；以附件和当前 WorkBuddy 工具代替原平台、外部连接器和账号前提；没有复制或执行上游安装脚本。
+
+| 来源技能 | 固定提交 | 技能文件修改日 |
+|---|---|---|
+| [anthropics/knowledge-work-plugins / data/skills/explore-data/SKILL.md](https://github.com/anthropics/knowledge-work-plugins/blob/95bdacc803aa5cfdb10f35e5b9fb2d4b11100133/data/skills/explore-data/SKILL.md) | `95bdacc803aa5cfdb10f35e5b9fb2d4b11100133` | 2026-03-13 |
+| [anthropics/knowledge-work-plugins / data/skills/validate-data/SKILL.md](https://github.com/anthropics/knowledge-work-plugins/blob/95bdacc803aa5cfdb10f35e5b9fb2d4b11100133/data/skills/validate-data/SKILL.md) | `95bdacc803aa5cfdb10f35e5b9fb2d4b11100133` | 2026-03-13 |
+| [anthropics/knowledge-work-plugins / data/skills/data-visualization/SKILL.md](https://github.com/anthropics/knowledge-work-plugins/blob/95bdacc803aa5cfdb10f35e5b9fb2d4b11100133/data/skills/data-visualization/SKILL.md) | `95bdacc803aa5cfdb10f35e5b9fb2d4b11100133` | 2026-03-13 |
+
+anthropics/knowledge-work-plugins 的 Apache-2.0 完整许可见 [原许可](references/knowledge-work-plugins-APACHE-2.0.txt)。公司原创部分遵循 [本技能许可](LICENSE.txt)。
