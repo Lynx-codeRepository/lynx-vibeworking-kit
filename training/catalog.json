@@ -1,28 +1,168 @@
 {
-  "schemaVersion": 1,
-  "release": "training-01-02-v1.0.0",
+  "schemaVersion": 2,
+  "release": "training-v1.1.0",
   "publishedDate": "2026-10-10",
   "format": "pdf-only",
-  "lessons": [
+  "totalCourses": 11,
+  "phases": [
     {
-      "number": 1,
-      "title": "AI 简史：从规则、学习到会行动的 Agent",
-      "file": "第一期-AI简史.pdf",
-      "pages": 19,
-      "sha256": "2a3765cfa1d774f0ad8bdb7043157fb32d401adbf97b4645f40e7955504acd9e",
-      "bytes": 3825894,
-      "sourceRelativePath": "升级课/PDF/AI进阶课-AI 简史、从规则、学习到会行动的 Agent.pdf",
-      "method": "byte-identical-copy"
+      "id": "phase-01",
+      "title": "第一期 · AI 编程实战训练营",
+      "sourceDirectory": "PDF",
+      "courseCount": 6,
+      "courses": [
+        {
+          "id": "lesson-01",
+          "order": 1,
+          "title": "第一讲 · 看懂软件世界，上手你的 AI 搭档",
+          "file": "phase-01/lesson-01.pdf",
+          "releaseAsset": "phase-01-lesson-01.pdf",
+          "pages": 44,
+          "bytes": 2992127,
+          "sha256": "24b7c1d58ecff549e9ace0da764507690b8eae4f0ab11298795f5d41e63f09a7",
+          "sourceRelativePath": "PDF/AI编程实战-第一讲.pdf",
+          "sourceFileName": "AI编程实战-第一讲.pdf",
+          "method": "byte-identical-copy"
+        },
+        {
+          "id": "lesson-02",
+          "order": 2,
+          "title": "第二讲 · 用 Codex 做完一个真实项目",
+          "file": "phase-01/lesson-02.pdf",
+          "releaseAsset": "phase-01-lesson-02.pdf",
+          "pages": 27,
+          "bytes": 1919698,
+          "sha256": "956d191cd41edec93640f27cd692b5b856fb04292849f3e0a62e066680f5bdc1",
+          "sourceRelativePath": "PDF/AI编程实战-第二讲.pdf",
+          "sourceFileName": "AI编程实战-第二讲.pdf",
+          "method": "byte-identical-copy"
+        },
+        {
+          "id": "lesson-03",
+          "order": 3,
+          "title": "第三讲 · 双工具进阶：同一个客户需求，两边解到底",
+          "file": "phase-01/lesson-03.pdf",
+          "releaseAsset": "phase-01-lesson-03.pdf",
+          "pages": 35,
+          "bytes": 2239223,
+          "sha256": "acfd046a94a8a4d9fbaba8146bb6c3e601d94dcd92123bc4127a0376f105b086",
+          "sourceRelativePath": "PDF/AI编程实战-第三讲.pdf",
+          "sourceFileName": "AI编程实战-第三讲.pdf",
+          "method": "byte-identical-copy"
+        },
+        {
+          "id": "lesson-04",
+          "order": 4,
+          "title": "第四讲 · 把重复动作做成 skill：从周报到售前方案",
+          "file": "phase-01/lesson-04.pdf",
+          "releaseAsset": "phase-01-lesson-04.pdf",
+          "pages": 30,
+          "bytes": 2335745,
+          "sha256": "8fafecc19f13875bc08900172ca4eefd169c0bdf47e812c9c2ca4c90e52f6d17",
+          "sourceRelativePath": "PDF/AI编程实战-第四讲.pdf",
+          "sourceFileName": "AI编程实战-第四讲.pdf",
+          "method": "byte-identical-copy"
+        },
+        {
+          "id": "lesson-05",
+          "order": 5,
+          "title": "第五讲 · 安全驾驭：三个翻车现场与还原",
+          "file": "phase-01/lesson-05.pdf",
+          "releaseAsset": "phase-01-lesson-05.pdf",
+          "pages": 32,
+          "bytes": 2204616,
+          "sha256": "d3f3161e384c21b6be1c2145c7a950041288b95d73a49a1b2affd3c64754c6dd",
+          "sourceRelativePath": "PDF/AI编程实战-第五讲.pdf",
+          "sourceFileName": "AI编程实战-第五讲.pdf",
+          "method": "byte-identical-copy"
+        },
+        {
+          "id": "lesson-06",
+          "order": 6,
+          "title": "第六讲 · Vibecoding 实战：把想法做成客户能打开的作品",
+          "file": "phase-01/lesson-06.pdf",
+          "releaseAsset": "phase-01-lesson-06.pdf",
+          "pages": 25,
+          "bytes": 2312475,
+          "sha256": "9d4bb41ba342f10ba6305469e87fe735d195345b56dda439f2ea643c03dad990",
+          "sourceRelativePath": "PDF/AI编程实战-第六讲.pdf",
+          "sourceFileName": "AI编程实战-第六讲.pdf",
+          "method": "byte-identical-copy"
+        }
+      ]
     },
     {
-      "number": 2,
-      "title": "从预测下一个 token 到会推理、会行动的 Agent",
-      "file": "第二期-从token到Agent.pdf",
-      "pages": 18,
-      "sha256": "de422bbe85b3bc7705f0c6ddbef1fe5d36de6ca2a365c47c1fd54fc092a7e471",
-      "bytes": 4323053,
-      "sourceRelativePath": "升级课/PDF/AI进阶课-第二讲-从预测下一个token到会行动的Agent.pdf",
-      "method": "byte-identical-copy"
+      "id": "phase-02",
+      "title": "第二期 · AI 进阶课",
+      "sourceDirectory": "升级课/PDF",
+      "courseCount": 5,
+      "courses": [
+        {
+          "id": "lesson-01",
+          "order": 1,
+          "title": "第一讲 · AI 简史：从规则、学习到会行动的 Agent",
+          "file": "phase-02/lesson-01.pdf",
+          "releaseAsset": "phase-02-lesson-01.pdf",
+          "pages": 19,
+          "bytes": 3825894,
+          "sha256": "2a3765cfa1d774f0ad8bdb7043157fb32d401adbf97b4645f40e7955504acd9e",
+          "sourceRelativePath": "升级课/PDF/AI进阶课-AI 简史、从规则、学习到会行动的 Agent.pdf",
+          "sourceFileName": "AI进阶课-AI 简史、从规则、学习到会行动的 Agent.pdf",
+          "method": "byte-identical-copy"
+        },
+        {
+          "id": "lesson-02",
+          "order": 2,
+          "title": "第二讲 · 从预测下一个 token 到会推理、会行动的 Agent",
+          "file": "phase-02/lesson-02.pdf",
+          "releaseAsset": "phase-02-lesson-02.pdf",
+          "pages": 18,
+          "bytes": 4323053,
+          "sha256": "de422bbe85b3bc7705f0c6ddbef1fe5d36de6ca2a365c47c1fd54fc092a7e471",
+          "sourceRelativePath": "升级课/PDF/AI进阶课-第二讲-从预测下一个token到会行动的Agent.pdf",
+          "sourceFileName": "AI进阶课-第二讲-从预测下一个token到会行动的Agent.pdf",
+          "method": "byte-identical-copy"
+        },
+        {
+          "id": "lesson-03",
+          "order": 3,
+          "title": "第三讲 · AI 时代的新工作方法",
+          "file": "phase-02/lesson-03.pdf",
+          "releaseAsset": "phase-02-lesson-03.pdf",
+          "pages": 18,
+          "bytes": 2556728,
+          "sha256": "f2d8bd0ff265d4221a876d9761f19f9a68099913e6fed3175aea73d728c63f99",
+          "sourceRelativePath": "升级课/PDF/AI进阶课-第三讲-AI时代的新工作方法.pdf",
+          "sourceFileName": "AI进阶课-第三讲-AI时代的新工作方法.pdf",
+          "method": "byte-identical-copy"
+        },
+        {
+          "id": "ontology-01",
+          "order": 4,
+          "title": "企业本体 · 第一节：本体智能，构建 AI 理解企业的认知底座",
+          "file": "phase-02/ontology-01.pdf",
+          "releaseAsset": "phase-02-ontology-01.pdf",
+          "pages": 20,
+          "bytes": 1360573,
+          "sha256": "3a1ae1eb511e10d215a98537ea8e4b148530b6c44c74b55d50dd33371afdcdfd",
+          "sourceRelativePath": "升级课/PDF/AI进阶课-本体智能：构建AI理解企业的认知底座.pdf",
+          "sourceFileName": "AI进阶课-本体智能：构建AI理解企业的认知底座.pdf",
+          "method": "byte-identical-copy"
+        },
+        {
+          "id": "ontology-02",
+          "order": 5,
+          "title": "企业本体 · 第二节：怎样把业务经验教给 AI",
+          "file": "phase-02/ontology-02.pdf",
+          "releaseAsset": "phase-02-ontology-02.pdf",
+          "pages": 23,
+          "bytes": 1492311,
+          "sha256": "29c6deab2f0c7b4b99c6fe76548fa059a1fa0277c2dfeb6702c9fd70a9e7bfe7",
+          "sourceRelativePath": "升级课/PDF/AI进阶课-怎样把业务经验教给AI.pdf",
+          "sourceFileName": "AI进阶课-怎样把业务经验教给AI.pdf",
+          "method": "byte-identical-copy"
+        }
+      ]
     }
   ]
 }

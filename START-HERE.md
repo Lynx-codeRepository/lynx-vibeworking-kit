@@ -1,6 +1,6 @@
 # 第一次使用：只需导入、交资料、说目标
 
-先学基础知识，可打开 [第一期与第二期 AI 培训正式课件](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/tree/main/training)，按顺序阅读两期 PDF。
+先学基础知识，可打开 [第一期与第二期 AI 培训正式课件](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/tree/main/training)。第一期 6 讲，第二期 5 份课程 PDF，按各期目录顺序学习。
 
 ## 1. 导入五个技能
 

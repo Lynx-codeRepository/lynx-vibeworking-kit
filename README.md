@@ -6,7 +6,7 @@
 
 ## AI 培训学习
 
-[第一期与第二期正式课件](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/tree/main/training)：两期 PDF，可在线阅读和下载。建议先学习，再使用工作技能。培训 PDF 单独获取，不作为技能上传。
+[第一期与第二期正式课件](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/tree/main/training)：第一期 6 讲、第二期 5 份，共 11 份 PDF，按期别和学习顺序在线阅读或下载。培训 PDF 单独获取，不作为技能上传。
 
 ## 下载与导入
 
