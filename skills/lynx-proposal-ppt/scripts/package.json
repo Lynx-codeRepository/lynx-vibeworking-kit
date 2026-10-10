@@ -1,0 +1,9 @@
+{
+  "name": "@lynx/editable-ppt-helper",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "dependencies": { "pptxgenjs": "4.0.1" },
+  "overrides": { "image-size": "2.0.3" }
+}

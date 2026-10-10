@@ -1,0 +1,16 @@
+name: 办公任务需求
+description: 记录方案、调研、分析或报告的使用需求
+title: "[工作 Kit] "
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: 谁需要完成什么任务
+      description: 写目标、读者、资料类型和预期成果，不上传客户私密材料
+    validations:
+      required: true
+  - type: textarea
+    id: difficulty
+    attributes:
+      label: 当前卡在哪里
+      description: WorkBuddy 版本、已用技能、实际错误及需要的改进

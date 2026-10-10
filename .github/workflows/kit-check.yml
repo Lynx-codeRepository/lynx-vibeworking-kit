@@ -33,5 +33,11 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4, verified 2026-10-08
         with:
           node-version: ${{ matrix.node }}
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5, verified 2026-10-10
+        with:
+          python-version: '3.12'
       - run: npm ci --ignore-scripts
+      - run: npm ci --ignore-scripts --prefix skills/lynx-proposal-ppt/scripts
+      - run: npm audit --omit=dev --prefix skills/lynx-proposal-ppt/scripts
+      - run: python -m pip install -r skills/lynx-data-insight/scripts/requirements.txt
       - run: npm run check

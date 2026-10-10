@@ -9,3 +9,7 @@ dist/
 *.zip
 *.tgz
 .lynx-kit/
+
+__pycache__/
+*.pyc
+.venv/

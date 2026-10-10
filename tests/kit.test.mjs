@@ -12,7 +12,7 @@ async function fixture(t) {
   return directory;
 }
 function options(directory, overrides = {}) {
-  return { mode: 'init', directory, type: 'website', name: '客户官网', goal: '让客户在手机上提交需求', tool: 'all', ...overrides };
+  return { mode: 'init', directory, type: 'proposal-ppt', name: '客户方案', goal: '准备客户内容运营方案', tool: 'all', ...overrides };
 }
 async function install(directory, overrides) {
   const plan = await buildPlan(options(directory, overrides));
@@ -29,10 +29,10 @@ async function addOutput(directory) {
 }
 
 test('Kit 任务、技能与本地导航完整', async () => {
-  assert.deepEqual(await validateKit(), { passed: true, profiles: 8, skills: 3, problems: [] });
+  assert.deepEqual(await validateKit(), { passed: true, profiles: 6, skills: 5, problems: [] });
 });
 
-test('八类任务生成正确类型且不伪造完成状态', async t => {
+test('六类办公任务生成正确类型且不伪造完成状态', async t => {
   const temporary = await fixture(t);
   for (const profile of (await readCatalog()).profiles) {
     const target = path.join(temporary, profile.id);
@@ -44,24 +44,24 @@ test('八类任务生成正确类型且不伪造完成状态', async t => {
   }
 });
 
-test('完整安装可通过安装包自己的 validate，三个入口都存在', async t => {
+test('完整安装可通过安装包自己的 validate，WorkBuddy 与两个维护入口存在', async t => {
   const target = path.join(await fixture(t), 'new');
   await install(target);
-  for (const relative of ['AGENTS.md', 'CLAUDE.md', '.cursor/rules/lynx-kit.mdc', '.claude/skills/lynx-professional-output/SKILL.md']) assert.equal((await fs.stat(path.join(target, relative))).isFile(), true);
+  for (const relative of ['AGENTS.md', 'WORKBUDDY-START.md', '.cursor/rules/lynx-kit.mdc', '.agents/skills/lynx-professional-output/SKILL.md']) assert.equal((await fs.stat(path.join(target, relative))).isFile(), true);
   assert.equal((await validateKit(path.join(target, '.lynx-kit'))).passed, true);
 });
 
 test('旧项目接入保留原有规则和业务文件', async t => {
   const target = await fixture(t);
-  for (const file of ['AGENTS.md', 'CLAUDE.md', 'business.txt']) await fs.writeFile(path.join(target, file), `用户内容：${file}\n`);
+  for (const file of ['AGENTS.md', 'WORKBUDDY-START.md', 'business.txt']) await fs.writeFile(path.join(target, file), `用户内容：${file}\n`);
   const plan = await install(target, { mode: 'attach' });
-  assert.deepEqual(plan.preserved, ['AGENTS.md', 'CLAUDE.md']);
-  for (const file of ['AGENTS.md', 'CLAUDE.md', 'business.txt']) assert.equal(await fs.readFile(path.join(target, file), 'utf8'), `用户内容：${file}\n`);
+  assert.deepEqual(plan.preserved, ['AGENTS.md', 'WORKBUDDY-START.md']);
+  for (const file of ['AGENTS.md', 'WORKBUDDY-START.md', 'business.txt']) assert.equal(await fs.readFile(path.join(target, file), 'utf8'), `用户内容：${file}\n`);
 });
 
 test('dry-run CLI 不创建目标目录', async t => {
   const target = path.join(await fixture(t), 'preview');
-  const result = spawnSync(process.execPath, [path.join(KIT_ROOT, 'bin/lynx-kit.mjs'), 'init', '--directory', target, '--type', 'dam', '--name', '预览', '--goal', '核对上传流程', '--dry-run', '--json'], { encoding: 'utf8' });
+  const result = spawnSync(process.execPath, [path.join(KIT_ROOT, 'bin/lynx-kit.mjs'), 'init', '--directory', target, '--type', 'client-research', '--name', '预览', '--goal', '准备客户研究', '--dry-run', '--json'], { encoding: 'utf8' });
   assert.equal(result.status, 0, result.stderr);
   assert.equal(JSON.parse(result.stdout).dryRun, true);
   await assert.rejects(fs.stat(target), { code: 'ENOENT' });
@@ -110,7 +110,7 @@ test('只装所选工具；错误类型、工具、名称与参数拒绝', async
   const target = path.join(await fixture(t), 'selected');
   await install(target, { tool: 'cursor' });
   await assert.rejects(fs.stat(path.join(target, '.agents')), { code: 'ENOENT' });
-  await assert.rejects(fs.stat(path.join(target, 'CLAUDE.md')), { code: 'ENOENT' });
+  await assert.rejects(fs.stat(path.join(target, 'WORKBUDDY-START.md')), { code: 'ENOENT' });
   const unused = path.join(path.dirname(target), 'unused');
   for (const override of [{ type: 'unknown' }, { tool: 'unknown' }, { name: '换行\n不合法' }, { goal: '' }]) await assert.rejects(buildPlan(options(unused, override)));
   const result = spawnSync(process.execPath, [path.join(KIT_ROOT, 'bin/lynx-kit.mjs'), 'init', '--unknown'], { encoding: 'utf8' });
@@ -180,4 +180,16 @@ test('安装与证据路径拒绝符号链接', { skip: process.platform === 'wi
   await fs.symlink(path.join(outside, 'private.md'), path.join(project, 'linked.md'));
   await setEvidence(project, { outputs: ['linked.md'] });
   assert.equal((await checkProject(project)).passed, false);
+});
+
+
+test('默认 WorkBuddy 不创建开发工具规则，不猜测自动加载目录', async t => {
+  const target = path.join(await fixture(t), 'office');
+  await install(target, { tool: undefined });
+  assert.equal((await fs.stat(path.join(target, 'WORKBUDDY-START.md'))).isFile(), true);
+  for (const relative of ['AGENTS.md', '.agents', '.cursor', '.workbuddy']) await assert.rejects(fs.stat(path.join(target, relative)), { code: 'ENOENT' });
+  const config = JSON.parse(await fs.readFile(path.join(target, '.lynx-kit/config.json')));
+  assert.equal(config.tool, 'workbuddy');
+  assert.equal((await fs.stat(path.join(target, '.lynx-kit/resources.json'))).isFile(), true);
+  await assert.rejects(fs.stat(path.join(target, '.lynx-kit/skills/lynx-proposal-ppt/scripts/node_modules')), { code: 'ENOENT' });
 });
