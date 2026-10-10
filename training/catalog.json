@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "release": "training-01-02-v1.0.0",
+  "publishedDate": "2026-10-10",
+  "format": "pdf-only",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "AI 简史：从规则、学习到会行动的 Agent",
+      "file": "第一期-AI简史.pdf",
+      "pages": 19,
+      "sha256": "2a3765cfa1d774f0ad8bdb7043157fb32d401adbf97b4645f40e7955504acd9e",
+      "bytes": 3825894,
+      "sourceRelativePath": "升级课/PDF/AI进阶课-AI 简史、从规则、学习到会行动的 Agent.pdf",
+      "method": "byte-identical-copy"
+    },
+    {
+      "number": 2,
+      "title": "从预测下一个 token 到会推理、会行动的 Agent",
+      "file": "第二期-从token到Agent.pdf",
+      "pages": 18,
+      "sha256": "de422bbe85b3bc7705f0c6ddbef1fe5d36de6ca2a365c47c1fd54fc092a7e471",
+      "bytes": 4323053,
+      "sourceRelativePath": "升级课/PDF/AI进阶课-第二讲-从预测下一个token到会行动的Agent.pdf",
+      "method": "byte-identical-copy"
+    }
+  ]
+}

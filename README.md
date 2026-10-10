@@ -4,6 +4,10 @@
 
 **员工从 [开始使用](START-HERE.md) 进入。无需学习 Git、命令行或代码开发。**
 
+## AI 培训学习
+
+[第一期与第二期正式课件](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/tree/main/training)：两期 PDF，可在线阅读和下载。建议先学习，再使用工作技能。培训 PDF 单独获取，不作为技能上传。
+
 ## 下载与导入
 
 在 [v0.2.0 下载页](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/tag/v0.2.0) 下载 5 个 `workbuddy-*.zip`。在 WorkBuddy 的「专家·技能·连接器 → 技能 → 添加技能 → 上传技能」逐个上传。每个 ZIP 都是独立的技能包，`SKILL.md` 位于包根目录。

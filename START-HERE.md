@@ -1,5 +1,7 @@
 # 第一次使用：只需导入、交资料、说目标
 
+先学基础知识，可打开 [第一期与第二期 AI 培训正式课件](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/tree/main/training)，按顺序阅读两期 PDF。
+
 ## 1. 导入五个技能
 
 打开 [下载页](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/tag/v0.2.0)，下载五个 `workbuddy-*.zip`。不要把完整仓库 ZIP 当作一个技能上传。
