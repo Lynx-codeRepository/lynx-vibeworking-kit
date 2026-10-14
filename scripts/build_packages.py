@@ -1,4 +1,4 @@
-"""Build eight configuration-free WorkBuddy skill ZIPs and a maintainer kit."""
+"""Build nine configuration-free WorkBuddy skill ZIPs and a maintainer kit."""
 import argparse
 import hashlib
 import json
@@ -6,7 +6,7 @@ from pathlib import Path
 from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILLS = ['lynx-delivery', 'lynx-research', 'lynx-data-insight', 'lynx-proposal-ppt', 'lynx-professional-output', 'lynx-competitive-brief', 'lynx-content-plan', 'lynx-writing-polish']
+SKILLS = ['lynx-delivery', 'lynx-research', 'lynx-data-insight', 'lynx-proposal-ppt', 'lynx-professional-output', 'lynx-competitive-brief', 'lynx-content-plan', 'lynx-writing-polish', 'lynx-diagram-design']
 EXCLUDED = {'.git', 'node_modules', '__pycache__', 'work', 'dist', '.lynx-kit', '.venv'}
 
 
@@ -26,7 +26,7 @@ def write_zip(destination, files, base, prefix=''):
     with ZipFile(destination, 'x', compression=ZIP_DEFLATED) as archive:
         for file in files:
             relative = prefix + file.relative_to(base).as_posix()
-            info = ZipInfo(relative, date_time=(2026, 10, 10, 0, 0, 0))
+            info = ZipInfo(relative, date_time=(2026, 10, 14, 0, 0, 0))
             info.compress_type = ZIP_DEFLATED
             info.external_attr = 0o644 << 16
             archive.writestr(info, file.read_bytes())

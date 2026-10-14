@@ -5,7 +5,7 @@ display_name_en: "Lingxi competitive and industry brief"
 description: "比较竞品、研究行业格局、准备客户竞争分析或售前对比材料时使用。统一维度建立证据矩阵，找差异、机会与待验证问题，不依赖付费流量工具。"
 description_zh: "比较竞品、研究行业格局、准备客户竞争分析或售前对比材料时使用。统一维度建立证据矩阵，找差异、机会与待验证问题，不依赖付费流量工具。"
 description_en: "Lingxi competitive and industry brief using existing WorkBuddy tools and supplied files."
-version: "0.3.0"
+version: "0.4.0"
 author: "灵熙智能 / Lynx-codeRepository"
 ---
 

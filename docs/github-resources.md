@@ -1,19 +1,20 @@
 # GitHub办公技能目录
 
-检查日期：**2026-10-10**。从员工实际工作筛选：客户准备、竞品比较、方案PPT、表格分析、品牌内容计划、会议交付和文字润色。核对8个候选来源，选择3个来源的13项方法，整理成8个独立中文技能包。
+新增图表技能核对日期：**2026-10-14**；其他来源保留2026-10-10记录。从员工实际工作筛选：客户准备、竞品比较、方案PPT、表格分析、品牌内容计划、会议交付和文字润色。累计核对9个候选来源，选择4个来源的14项方法，整理成9个独立中文技能包。
 
 ## 员工下载入口
 
 | 今天要完成的工作 | 上传哪个技能 | 交付什么 |
 |---|---|---|
-| 客户/行业/公开数据调研 | [灵熙客户与数据调研](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-research-v0.3.0.zip) | 客户简报、来源表、沟通问题 |
-| 竞品比较、售前对比 | [灵熙竞品与行业简报](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-competitive-brief-v0.3.0.zip) | 对比矩阵、竞争简报、机会与待验证项 |
-| 客户方案与PPT | [灵熙方案与 PPT](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-proposal-ppt-v0.3.0.zip) | 逐页文案、可编辑PPT、材料与检查 |
-| Excel/CSV运营分析 | [灵熙数据洞察](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-data-insight-v0.3.0.zip) | 质量检查、可复算明细、图表与建议 |
-| 品牌内容、活动与GEO选题 | [灵熙内容策划](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-content-plan-v0.3.0.zip) | 内容日历、活动brief、素材与指标 |
-| 会议纪要、客户跟进、周报月报 | [灵熙专业文档](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-professional-output-v0.3.0.zip) | 可编辑文档、行动项、待确认信息 |
-| 方案/报告/邮件文字润色 | [灵熙文字润色](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-writing-polish-v0.3.0.zip) | 保留事实与口吻的最终改稿 |
-| 多步骤任务、不知道选哪个 | [灵熙工作任务助手](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/download/v0.3.0/workbuddy-lynx-delivery-v0.3.0.zip) | 任务拆解、流程选择与交付检查 |
+| 客户/行业/公开数据调研 | [灵熙客户与数据调研](https://github.com/Lynx-codeRepository/lynx-vibeworking-kit/releases/download/v0.4.0/workbuddy-lynx-research-v0.4.0.zip) | 客户简报、来源表、沟通问题 |
+| 竞品比较、售前对比 | [灵熙竞品与行业简报](https://github.com/Lynx-codeRepository/lynx-vibeworking-kit/releases/download/v0.4.0/workbuddy-lynx-competitive-brief-v0.4.0.zip) | 对比矩阵、竞争简报、机会与待验证项 |
+| 客户方案与PPT | [灵熙方案与 PPT](https://github.com/Lynx-codeRepository/lynx-vibeworking-kit/releases/download/v0.4.0/workbuddy-lynx-proposal-ppt-v0.4.0.zip) | 逐页文案、可编辑PPT、材料与检查 |
+| Excel/CSV运营分析 | [灵熙数据洞察](https://github.com/Lynx-codeRepository/lynx-vibeworking-kit/releases/download/v0.4.0/workbuddy-lynx-data-insight-v0.4.0.zip) | 质量检查、可复算明细、图表与建议 |
+| 品牌内容、活动与GEO选题 | [灵熙内容策划](https://github.com/Lynx-codeRepository/lynx-vibeworking-kit/releases/download/v0.4.0/workbuddy-lynx-content-plan-v0.4.0.zip) | 内容日历、活动brief、素材与指标 |
+| 会议纪要、客户跟进、周报月报 | [灵熙专业文档](https://github.com/Lynx-codeRepository/lynx-vibeworking-kit/releases/download/v0.4.0/workbuddy-lynx-professional-output-v0.4.0.zip) | 可编辑文档、行动项、待确认信息 |
+| 方案/报告/邮件文字润色 | [灵熙文字润色](https://github.com/Lynx-codeRepository/lynx-vibeworking-kit/releases/download/v0.4.0/workbuddy-lynx-writing-polish-v0.4.0.zip) | 保留事实与口吻的最终改稿 |
+| 流程、客户旅程与汇报图表 | [灵熙图表与方案可视化](https://github.com/Lynx-codeRepository/lynx-vibeworking-kit/releases/download/v0.4.0/workbuddy-lynx-diagram-design-v0.4.0.zip) | HTML/SVG源图、图片导出与检查 |
+| 多步骤任务、不知道选哪个 | [灵熙工作任务助手](https://github.com/Lynx-codeRepository/lynx-vibeworking-kit/releases/download/v0.4.0/workbuddy-lynx-delivery-v0.4.0.zip) | 任务拆解、流程选择与交付检查 |
 
 这些ZIP以WorkBuddy官方元数据与包结构整理，使用当前WorkBuddy能力，不带安装脚本、运行依赖、API Key配置或CRM连接器。它们是本项目改编版，原包和原平台插件没有直接混装；不是上游官方的WorkBuddy发行版。
 
@@ -24,6 +25,7 @@
 | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | 28,340 | 2026-01-23 | 2026-10-09 | Apache-2.0 |
 | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | 53,948 | 2026-01-15 | 2026-10-08 | MIT |
 | [blader/humanizer](https://github.com/blader/humanizer) | 55,261 | 2026-01-18 | 2026-09-28 | MIT |
+| [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | 54,661 | 2026-04-16 | 2026-10-13 | MIT |
 
 星标是社区认可的参考；选择还核对实际任务、许可、材料输入方式、依赖和工作质量。没有因为星标高就整库导入。
 
@@ -46,8 +48,13 @@
 | [skills/customer-research/SKILL.md](https://github.com/coreyhaines31/marketingskills/blob/1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff/skills/customer-research/SKILL.md) | 2026-10-03 | [lynx-research](../skills/lynx-research/SKILL.md) |
 | [skills/marketing-plan/SKILL.md](https://github.com/coreyhaines31/marketingskills/blob/1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff/skills/marketing-plan/SKILL.md) | 2026-10-06 | [lynx-proposal-ppt](../skills/lynx-proposal-ppt/SKILL.md)、[lynx-content-plan](../skills/lynx-content-plan/SKILL.md) |
 | [SKILL.md](https://github.com/blader/humanizer/blob/225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8/SKILL.md) | 2026-09-28 | [lynx-writing-polish](../skills/lynx-writing-polish/SKILL.md) |
+| [Diagram Design](https://github.com/cathrynlavery/diagram-design/blob/11b08eade8049c441ed3df1895e3b527c26c0fbe/skills/diagram-design/SKILL.md) | 2026-10-13 | [lynx-diagram-design](../skills/lynx-diagram-design/SKILL.md) |
 
 完整提交、文件SHA256和方法映射见 [resources.json](../resources.json)。各技能内保留改编说明与适用许可。公司名称、客户范围和事实要求已纳入流程；保留已确认资料，去掉强制CRM/数据仓库、外部账号和平台专属路径前提。
+
+## 图表技能的改编范围
+
+应用户指定加入 Diagram Design，新增中文办公入口，保留上游静态类型参考与3份模板；模板改用中文系统字体。未打包动画、风格配置、图标、脚本式导入或导出。文件工具可生成HTML/SVG，现有渲染能力可导出PNG；图片不等于原生可编辑PPT元素。许可与逐文件来源在技能内保留。
 
 ## 本批未选用
 

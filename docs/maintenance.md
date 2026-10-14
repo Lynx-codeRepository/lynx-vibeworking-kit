@@ -2,9 +2,9 @@
 
 员工使用独立技能ZIP，维护者管理仓库与完整包。核对资源时同时记录星标、创建时间、仓库推送、固定提交、具体技能文件修改时间和许可，避免用仓库活动冒充技能更新。
 
-v0.3.0加入竞品简报、内容策划、文字润色，升级客户/方案/数据/文档流程。原有任务类型仍保留；员工按WorkBuddy当前流程更新或重新导入同名技能，避免双版本同时启用。
+v0.4.0加入竞品简报、内容策划、文字润色，升级客户/方案/数据/文档流程。原有任务类型仍保留；员工按WorkBuddy当前流程更新或重新导入同名技能，避免双版本同时启用。
 
-修改流程或工具后执行 `npm run check`。PPT工具回归需在该技能脚本目录准备固定npm依赖，Excel检查需固定requirements；这些是维护者验证步骤。运行 `python3 scripts/build_packages.py --output /空的发布目录` 生成八个独立ZIP、维护完整包、manifest.json与SHA256SUMS.txt。
+修改流程或工具后执行 `npm run check`。PPT工具回归需在该技能脚本目录准备固定npm依赖，Excel检查需固定requirements；这些是维护者验证步骤。运行 `python3 scripts/build_packages.py --output /空的发布目录` 生成九个独立ZIP、维护完整包、manifest.json与SHA256SUMS.txt。
 
 员工ZIP只含技能、参考、模板和许可，不打包scripts或运行依赖；完整包保留维护脚本。构建拒绝覆盖和符号链接。更新维护代码前保留相关输入/输出。
 

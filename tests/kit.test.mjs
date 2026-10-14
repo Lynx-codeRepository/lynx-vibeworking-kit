@@ -29,10 +29,10 @@ async function addOutput(directory) {
 }
 
 test('Kit 任务、技能与本地导航完整', async () => {
-  assert.deepEqual(await validateKit(), { passed: true, profiles: 9, skills: 8, problems: [] });
+  assert.deepEqual(await validateKit(), { passed: true, profiles: 10, skills: 9, problems: [] });
 });
 
-test('九类办公任务生成正确类型且不伪造完成状态', async t => {
+test('十类办公任务生成正确类型且不伪造完成状态', async t => {
   const temporary = await fixture(t);
   for (const profile of (await readCatalog()).profiles) {
     const target = path.join(temporary, profile.id);

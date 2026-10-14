@@ -5,7 +5,7 @@ display_name_en: "Lingxi clear business writing"
 description: "已有客户方案、汇报、邮件草稿或品牌文案需要润色、缩短、去空话或贴近作者口吻时使用。保留事实、数字、限定条件和来源，不承担事实研究或重新制定方案。"
 description_zh: "已有客户方案、汇报、邮件草稿或品牌文案需要润色、缩短、去空话或贴近作者口吻时使用。保留事实、数字、限定条件和来源，不承担事实研究或重新制定方案。"
 description_en: "Lingxi clear business writing using existing WorkBuddy tools and supplied files."
-version: "0.3.0"
+version: "0.4.0"
 author: "灵熙智能 / Lynx-codeRepository"
 ---
 

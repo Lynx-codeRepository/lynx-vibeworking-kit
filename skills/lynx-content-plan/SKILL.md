@@ -5,7 +5,7 @@ display_name_en: "Lingxi content and campaign planning"
 description: "制作品牌内容月计划、活动方案、GEO选题、内容日历或多渠道运营brief时使用。把受众问题、品牌事实、渠道与指标连接到可执行计划。"
 description_zh: "制作品牌内容月计划、活动方案、GEO选题、内容日历或多渠道运营brief时使用。把受众问题、品牌事实、渠道与指标连接到可执行计划。"
 description_en: "Lingxi content and campaign planning using existing WorkBuddy tools and supplied files."
-version: "0.3.0"
+version: "0.4.0"
 author: "灵熙智能 / Lynx-codeRepository"
 ---
 

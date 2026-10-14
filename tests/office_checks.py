@@ -90,7 +90,7 @@ class OfficeChecks(unittest.TestCase):
         first = packager.build(self.directory / 'first')
         second = packager.build(self.directory / 'second')
         self.assertEqual(first, second)
-        self.assertEqual(len(first), 9)
+        self.assertEqual(len(first), 10)
         for item in first:
             with ZipFile(self.directory / 'first' / item['file']) as archive:
                 names = archive.namelist()
@@ -107,7 +107,7 @@ class OfficeChecks(unittest.TestCase):
                             continue
                         markdown = re.sub(r'```[\s\S]*?```', '', archive.read(name).decode('utf-8'))
                         for link in re.findall(r'\[[^\]]*\]\(([^)]+)\)', markdown):
-                            if re.match(r'^[a-z]+:', link):
+                            if link.startswith('#') or re.match(r'^[a-z]+:', link):
                                 continue
                             local = posixpath.normpath(posixpath.join(posixpath.dirname(name), link.split('#')[0]))
                             self.assertFalse(local == '..' or local.startswith('../'))

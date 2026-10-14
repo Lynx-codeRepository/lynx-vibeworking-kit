@@ -5,7 +5,7 @@ display_name_en: "Lingxi reports and meeting notes"
 description: "依据客户会议、拜访记录或工作材料制作纪要、跟进草稿、周报月报、调研报告及管理汇报时使用。区分决定与建议，明确行动、责任和待确认项。"
 description_zh: "依据客户会议、拜访记录或工作材料制作纪要、跟进草稿、周报月报、调研报告及管理汇报时使用。区分决定与建议，明确行动、责任和待确认项。"
 description_en: "Lingxi reports and meeting notes using existing WorkBuddy tools and supplied files."
-version: "0.3.0"
+version: "0.4.0"
 author: "灵熙智能 / Lynx-codeRepository"
 ---
 

@@ -5,7 +5,7 @@ display_name_en: "Lingxi customer and data research"
 description: "为客户拜访、方案准备、行业判断或公开数据收集开展研究时使用。输出有来源和日期的客户简报、数据表及待验证问题，不要求CRM或付费研究工具。"
 description_zh: "为客户拜访、方案准备、行业判断或公开数据收集开展研究时使用。输出有来源和日期的客户简报、数据表及待验证问题，不要求CRM或付费研究工具。"
 description_en: "Lingxi customer and data research using existing WorkBuddy tools and supplied files."
-version: "0.3.0"
+version: "0.4.0"
 author: "灵熙智能 / Lynx-codeRepository"
 ---
 

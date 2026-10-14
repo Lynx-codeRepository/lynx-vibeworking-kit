@@ -5,7 +5,7 @@ display_name_en: "Lingxi proposals and presentations"
 description: "为客户沟通、方案提案或管理汇报制作可编辑PPT、单页方案或逐页文案时使用。以客户问题和已确认材料组织内容，使用WorkBuddy已有演示能力。"
 description_zh: "为客户沟通、方案提案或管理汇报制作可编辑PPT、单页方案或逐页文案时使用。以客户问题和已确认材料组织内容，使用WorkBuddy已有演示能力。"
 description_en: "Lingxi proposals and presentations using existing WorkBuddy tools and supplied files."
-version: "0.3.0"
+version: "0.4.0"
 author: "灵熙智能 / Lynx-codeRepository"
 ---
 

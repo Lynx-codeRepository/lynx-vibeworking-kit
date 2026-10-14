@@ -5,7 +5,7 @@ display_name_en: "Lingxi spreadsheet analysis"
 description: "分析Excel或CSV中的内容、媒介、客户运营、GEO数据，或复核数据报告时使用。检查质量、统一指标、计算和制图，并提供可复算明细。"
 description_zh: "分析Excel或CSV中的内容、媒介、客户运营、GEO数据，或复核数据报告时使用。检查质量、统一指标、计算和制图，并提供可复算明细。"
 description_en: "Lingxi spreadsheet analysis using existing WorkBuddy tools and supplied files."
-version: "0.3.0"
+version: "0.4.0"
 author: "灵熙智能 / Lynx-codeRepository"
 ---
 

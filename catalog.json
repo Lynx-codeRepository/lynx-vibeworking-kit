@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "organization": "Lynx-codeRepository",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "profiles": [
     {
       "id": "proposal-ppt",
@@ -190,6 +190,27 @@
         "润色后的正文或文件",
         "必要修改说明",
         "事实待核对项"
+      ]
+    },
+    {
+      "id": "diagram-design",
+      "title": "图表与方案可视化",
+      "audience": [
+        "业务",
+        "运营",
+        "研发新人"
+      ],
+      "examples": [
+        "把客户服务流程、方案结构与运营数据画成汇报图"
+      ],
+      "recipe": "skills/lynx-delivery/references/packs/diagram-design.md",
+      "skill": "lynx-diagram-design",
+      "repositories": [],
+      "tools": [],
+      "outputs": [
+        "HTML与SVG源图",
+        "可用工具导出的PNG",
+        "来源、简化记录与检查"
       ]
     }
   ]

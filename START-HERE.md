@@ -2,9 +2,9 @@
 
 ## 1. 只下载今天需要的技能
 
-打开 [v0.3.0 下载页](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/releases/tag/v0.3.0)，按 [任务表](README.md) 下载对应 `workbuddy-*.zip`。不必下载完整仓库，也不必一次装完8个。
+打开 [v0.4.0 下载页](https://github.com/Lynx-codeRepository/lynx-vibeworking-kit/releases/tag/v0.4.0)，按 [任务表](README.md) 下载对应 `workbuddy-*.zip`。不必下载完整仓库，也不必一次装完9个。
 
-做客户调研先选「灵熙客户与数据调研」；做方案选「灵熙方案与 PPT」；分析表格选「灵熙数据洞察」。日后需要内容计划、竞品对比、文字润色或纪要，再添加相应技能。多步骤任务可加「灵熙工作任务助手」。
+做客户调研先选「灵熙客户与数据调研」；做方案选「灵熙方案与 PPT」；分析表格选「灵熙数据洞察」。日后需要内容计划、竞品对比、文字润色或纪要，再添加相应技能。多步骤任务可加「灵熙工作任务助手」。流程图、客户旅程和汇报图表选「灵熙图表与方案可视化」。
 
 ## 2. 在WorkBuddy上传并启用
 
@@ -25,8 +25,9 @@
 - PPT：核对是否是可编辑文件，文字/图表无溢出，数字与材料一致。
 - 调研：点开重要来源，核对原文、日期与口径；公开信号形成的推断与客户确认需求分开。
 - 数据：核对期间、单位、分母、缺失/重复处理和至少一项关键计算。
+- 图表：核对关系和数据、中文是否完整、线条是否清楚；PNG是图片，保留HTML/SVG源图供后续修改。
 - 文档：核对姓名、日期、共识、行动责任；提议与决定分开。
 
 有问题直接说「修正【问题】，重做受影响部分并核对」。技能使用WorkBuddy当前已有能力；若某项能力不可用，AI应交可审阅的中间成果，说明未完成文件，员工不用处理依赖安装。
 
-需要基础学习时，可到 [两期AI培训课程](https://github.com/Lynx-codeRepository/lynx-vibecoding-kit/tree/main/training) 按顺序阅读。
+需要基础学习时，可到 [两期AI培训课程](https://github.com/Lynx-codeRepository/lynx-vibeworking-kit/tree/main/training) 按顺序阅读。
